@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins:wght@100;200;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: whitesmoke;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+.headerNombre {
+  text-align: center;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.headerNombre h1 {
+  text-decoration: overline;
+}
+.header ul {
+  list-style: none;
+}
+.header ul li a {
+  padding-right: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.mainUno {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 800px;
+}
+.mainUno div {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.mainUno div p {
+  margin-top: 20px;
+}
+.mainUno img {
+  width: 400px;
+  height: 500px;
+}
+.mainDos {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 400px;
+}
+.mainDos p {
+  padding: 30px;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  width: 700px;
+  text-align: left;
+}
+.mainTres {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 800px;
+}
+.mainTres p {
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 50px;
+  width: 700px;
+  text-align: center;
+}
+.footer {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
+}
+.footerUno h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+.footerUno {
+  font-family: "Montserrat", sans-serif;
+}
+.footerUno img {
+  width: 30px;
+  height: 30px;
+}
+.footerDos {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.footerDos img {
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+}
+footer {
+  border-right: 1px solid black;
+}
+footer p {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: overline;
+  text-align: center;
+  font-size: 20px;
+}
+.footerTres {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.footerdatouno {
+  display: flex;
+}
+.footerdatodos {
+  margin-top: 10px;
+  display: flex;
+}
+.footerdatouno img {
+  margin-right: 10px;
+}
+.footerdatodos img {
+  margin-right: 10px;
+}
