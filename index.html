@@ -5,71 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV Matias De Bruyn</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/estilos.css" />
   </head>
-  <body class="body">
+  <body>
     <header class="header">
-      <div class="headerNombre">
-        <h1>Matias Nicolas</h1>
-        <h2>De Bruyn</h2>
-      </div>
       <ul>
         <li>
-          <a href="">About</a>
+          <a href="#mainUno">About Me</a>
           <a href="">Education</a>
           <a href="">Experience</a>
           <a href="">Jobs</a>
-          <a href="">Contac</a>
+          <a href="#footer" class="abajo">Contact</a>
         </li>
       </ul>
     </header>
-    <main>
-      <section class="mainUno">
+    <main class="main">
+      <section id="mainUno">
         <div>
-          <h1>Hi, my name is Matias de Bruyn</h1>
-          <p>I am a Web Developer, Web Designer and future Nutritionist</p>
+          <h1>Matias Nicolas De Bruyn</h1>
         </div>
-        <img src="./img/foto mia.jpg" alt="" />
-      </section>
-      <section class="mainDos">
-        <p>
-          I stand out in being committed and quick to respond to the situations
-          to be faced, agile and able to work as a team. Passionate about having
-          a goal to achieve and not stopping until it is achieved
-        </p>
+        <div>
+          <h2>Hi, I am a Web Developer and future Nutritionist</h2>
+          <h3>
+            I stand out in being committed and quick to respond to the
+            situations to be faced, agile and able to work as a team. Passionate
+            about having a goal to achieve and not stopping until it is achieved
+          </h3>
+        </div>
+        <img id="poster" src="./img/foto mia.jpg" alt="" />
       </section>
       <section class="mainTres">
         <p>Skills</p>
+        <div class="SkillsPrimero">
+          <div class="s1"></div>
+          <div class="s2"></div>
+          <div class="s3"></div>
+          <div class="s4"></div>
+        </div>
+        <div class="SkillsSegundo">
+          <div class="s5"></div>
+          <div class="s6"></div>
+          <div class="s7"></div>
+          <div class="s8"></div>
+        </div>
       </section>
     </main>
-    <footer>
-      <div class="footer">
-        <div>
-          <div class="footerUno">
-            <h1>CONTACTAME</h1>
-            <div class="footerdatouno">
-              <img src="./img/telefono.png" alt="TELEFONO" />
-              <h2>1135698876</h2>
-            </div>
-            <div class="footerdatodos">
-              <img src="./img/email.png" alt="MAIL" />
-              <h2>matutedebruyn@gmail.com</h2>
-            </div>
-          </div>
-          <div class="footerDos">
-            <a href="" target="_blank"
-              ><img src="./img/github.png" alt="GITHUB"
-            /></a>
-            <a href="" target="_blank"
-              ><img src="./img/linkedin.png" alt="LINKEDIN"
-            /></a>
-          </div>
+    <footer id="footer">
+      <h1>Get in Touch with Me</h1>
+      <div class="contacto">
+        <div class="redes">
+          <h2>Social Networks</h2>
+          <a href="https://github.com/Matiasdbruyn" target="_blank"
+            ><img src="./img/github.png" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/matias-nicolas-de-bruyn-125712208/"
+            target="_blank"
+            ><img src="./img/linkedin.png" alt=""
+          /></a>
         </div>
-        <div class="footerTres">
-          <h4>sdasdsada</h4>
+        <div class="telefono">
+          <h3>Phone</h3>
+          <h4>1135698876</h4>
+        </div>
+        <div class="mail">
+          <h5>Email</h5>
+          <h6>matutedebruyn@gmail.com</h6>
         </div>
       </div>
-      <p>"Todos los derechos reservados © 2023" Matias De Bruyn</p>
+      <div class="derechos">
+        <p>"Todos los derechos reservados © 2023" Matias De Bruyn</p>
+      </div>
     </footer>
   </body>
 </html>

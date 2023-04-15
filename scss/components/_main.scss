@@ -1,0 +1,362 @@
+/*---------INDEX-----------*/
+#mainUno {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 800px;
+  div {
+    h1 {
+      writing-mode: vertical-lr;
+      transform: rotate(-180deg);
+      font-family: "Montserrat", sans-serif;
+      font-size: 45px;
+      text-align: left;
+      padding: 20px;
+    }
+  }
+  div {
+    h2 {
+      border-left: 1px solid brown;
+      font-family: "Montserrat", sans-serif;
+      font-size: 27px;
+      text-align: left;
+      padding: 20px;
+      width: 700px;
+    }
+    h3 {
+      padding: 20px;
+      font-family: "Montserrat", sans-serif;
+      text-align: left;
+      border-left: 1px solid brown;
+      font-size: 30px;
+      width: 700px;
+    }
+  }
+  img {
+    width: 400px;
+    height: 500px;
+    box-shadow: 7px 5px 37px -1px rgb(5, 2, 0);
+    -webkit-box-shadow: 7px 5px 37px -1px rgb(0, 0, 0);
+    -moz-box-shadow: 7px 5px 37px -1px rgb(0, 0, 0);
+    filter: blur(1px);
+    transition: transform 1s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      filter: blur(0px);
+    }
+  }
+}
+
+.mainTres {
+  border-top: 1px solid black;
+  height: 800px;
+  p {
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(119, 30, 30);
+  }
+  .SkillsPrimero {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .s1 {
+      &,
+      &::before,
+      &::after {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+      background: linear-gradient(white 50%, brown 50%);
+      position: relative;
+      transform: rotate(90deg);
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      &:before {
+        transform: rotate(-90deg);
+        content: "HTML";
+        background: white content-box;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 30px;
+        line-height: 140px;
+      }
+      &:after {
+        content: "60%";
+        background: linear-gradient(transparent 50%, white 50%);
+        transform: scale(1.1) rotate(-90deg);
+        font-size: 20px;
+        line-height: 220px;
+      }
+    }
+    .s2 {
+      &,
+      &::before,
+      &::after {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+      background: linear-gradient(white 50%, brown 50%);
+      position: relative;
+      transform: rotate(90deg);
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      &:before {
+        transform: rotate(-90deg);
+        content: "CSS";
+        background: white content-box;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 30px;
+        line-height: 140px;
+      }
+      &:after {
+        content: "60%";
+        background: linear-gradient(transparent 50%, white 50%);
+        transform: scale(1.1) rotate(-90deg);
+        font-size: 20px;
+        line-height: 220px;
+      }
+    }
+    .s3 {
+      &,
+      &::before,
+      &::after {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+      background: linear-gradient(white 50%, brown 50%);
+      position: relative;
+      transform: rotate(90deg);
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      &:before {
+        transform: rotate(-90deg);
+        content: "JS";
+        background: white content-box;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 30px;
+        line-height: 140px;
+      }
+      &:after {
+        content: "60%";
+        background: linear-gradient(transparent 50%, white 50%);
+        transform: scale(1.1) rotate(-90deg);
+        font-size: 20px;
+        line-height: 220px;
+      }
+    }
+    .s4 {
+      &,
+      &::before,
+      &::after {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+      background: linear-gradient(white 50%, brown 50%);
+      position: relative;
+      transform: rotate(90deg);
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      &:before {
+        transform: rotate(-90deg);
+        content: "GIT";
+        background: white content-box;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 30px;
+        line-height: 140px;
+      }
+      &:after {
+        content: "60%";
+        background: linear-gradient(transparent 50%, white 50%);
+        transform: scale(1.1) rotate(-90deg);
+        font-size: 20px;
+        line-height: 220px;
+      }
+    }
+  }
+  .SkillsSegundo {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .s5 {
+      &,
+      &::before,
+      &::after {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+      background: linear-gradient(white 50%, brown 50%);
+      position: relative;
+      transform: rotate(90deg);
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      &:before {
+        transform: rotate(-90deg);
+        content: "AI";
+        background: white content-box;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 30px;
+        line-height: 140px;
+      }
+      &:after {
+        content: "60%";
+        background: linear-gradient(transparent 50%, white 50%);
+        transform: scale(1.1) rotate(-90deg);
+        font-size: 20px;
+        line-height: 220px;
+      }
+    }
+    .s6 {
+      &,
+      &::before,
+      &::after {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+      background: linear-gradient(white 50%, brown 50%);
+      position: relative;
+      transform: rotate(90deg);
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      &:before {
+        transform: rotate(-90deg);
+        content: "PS";
+        background: white content-box;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 30px;
+        line-height: 140px;
+      }
+      &:after {
+        content: "60%";
+        background: linear-gradient(transparent 50%, white 50%);
+        transform: scale(1.1) rotate(-90deg);
+        font-size: 20px;
+        line-height: 220px;
+      }
+    }
+    .s7 {
+      &,
+      &::before,
+      &::after {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+      background: linear-gradient(white 50%, brown 50%);
+      position: relative;
+      transform: rotate(90deg);
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      &:before {
+        transform: rotate(-90deg);
+        content: "PR";
+        background: white content-box;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 30px;
+        line-height: 140px;
+      }
+      &:after {
+        content: "60%";
+        background: linear-gradient(transparent 50%, white 50%);
+        transform: scale(1.1) rotate(-90deg);
+        font-size: 20px;
+        line-height: 220px;
+      }
+    }
+    .s8 {
+      &,
+      &::before,
+      &::after {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+      }
+      background: linear-gradient(white 50%, brown 50%);
+      position: relative;
+      transform: rotate(90deg);
+      &::before,
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+      }
+      &:before {
+        transform: rotate(-90deg);
+        content: "MS";
+        background: white content-box;
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 30px;
+        line-height: 140px;
+      }
+      &:after {
+        content: "60%";
+        background: linear-gradient(transparent 50%, white 50%);
+        transform: scale(1.1) rotate(-90deg);
+        font-size: 20px;
+        line-height: 220px;
+      }
+    }
+  }
+}

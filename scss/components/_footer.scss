@@ -1,0 +1,76 @@
+/*---------FOOTER-----------*/
+#footer {
+  border-top: 1px solid black;
+  background-color: rgb(192, 147, 147);
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+    text-decoration: overline;
+  }
+  .contacto {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    .redes {
+      margin-right: 300px;
+      h2 {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+      }
+      a {
+        img {
+          width: 40px;
+          height: 40px;
+          margin-right: 15px;
+          float: inherit;
+          margin-top: 15px;
+          margin-left: 15px;
+        }
+      }
+    }
+    .telefono {
+      text-align: center;
+      h3 {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+        padding: 15px;
+      }
+      h4 {
+        font-family: "Montserrat", sans-serif;
+        color: white;
+        font-size: 20px;
+      }
+    }
+    .mail {
+      margin-left: 200px;
+      h5 {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+      }
+      h6 {
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+      }
+    }
+  }
+  .derechos {
+    background-color: brown;
+    p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+  }
+}
