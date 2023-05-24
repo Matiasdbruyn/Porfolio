@@ -1,361 +1,265 @@
 /*---------INDEX-----------*/
-#mainUno {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+body {
+  background-color: rgb(214, 213, 213);
+}
+.main {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#mainhe {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 800px;
-  div {
-    h1 {
-      writing-mode: vertical-lr;
-      transform: rotate(-180deg);
-      font-family: "Montserrat", sans-serif;
-      font-size: 45px;
-      text-align: left;
-      padding: 20px;
+  height: 150px;
+  ul {
+    list-style: none;
+    li {
+      a {
+        padding-right: 50px;
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        color: rgb(54, 54, 54);
+        font-size: 25px;
+        transition-duration: 1s;
+        &:hover {
+          color: red;
+        }
+      }
     }
   }
-  div {
-    h2 {
-      border-left: 1px solid brown;
+}
+#menu {
+  #Principio {
+    height: 1000px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    h1 {
       font-family: "Montserrat", sans-serif;
-      font-size: 27px;
-      text-align: left;
-      padding: 20px;
-      width: 700px;
+      text-align: center;
+      font-size: 70px;
+      padding-bottom: 10px;
+    }
+    .izquierda {
+      margin-right: 300px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      text-align: center;
+      font-size: 90px;
+      animation: desplegarI 2s ease-in-out;
+      @keyframes desplegarI {
+        0% {
+          margin-right: 800px;
+        }
+        100% {
+          margin-right: 300px;
+        }
+      }
+    }
+    .derecha {
+      margin-left: 300px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 800;
+      text-align: center;
+      font-size: 90px;
+      animation: desplegarD 2s ease-in-out;
+      @keyframes desplegarD {
+        0% {
+          margin-left: 800px;
+        }
+        100% {
+          margin-left: 300px;
+        }
+      }
     }
     h3 {
-      padding: 20px;
+      padding-top: 10px;
       font-family: "Montserrat", sans-serif;
-      text-align: left;
-      border-left: 1px solid brown;
-      font-size: 30px;
-      width: 700px;
+      text-align: center;
+      font-size: 70px;
     }
   }
-  img {
-    width: 400px;
-    height: 500px;
-    box-shadow: 7px 5px 37px -1px rgb(5, 2, 0);
-    -webkit-box-shadow: 7px 5px 37px -1px rgb(0, 0, 0);
-    -moz-box-shadow: 7px 5px 37px -1px rgb(0, 0, 0);
-    filter: blur(1px);
-    transition: transform 1s ease-in-out;
-    &:hover {
-      transform: scale(1.1);
-      filter: blur(0px);
+  #Education {
+    height: 800px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    .izqui {
+      display: flex;
+      border-left: 2px solid red;
+      padding: 20px;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        width: 350px;
+        margin-left: 20px;
+      }
+    }
+    .dere {
+      display: grid;
+      border-left: 2px solid red;
+      padding: 20px;
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  #Experience {
+    background-color: red;
+    height: 800px;
+    display: none;
+  }
+  #Jobs {
+    background-color: green;
+    height: 800px;
+    display: none;
+  }
+  #AboutMe {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 800px;
+    div {
+      h1 {
+        color: rgb(54, 54, 54);
+        writing-mode: vertical-lr;
+        transform: rotate(-180deg);
+        font-family: "Montserrat", sans-serif;
+        font-size: 45px;
+        text-align: left;
+        padding: 20px;
+      }
+    }
+    div {
+      h2 {
+        color: rgb(54, 54, 54);
+        border-left: 3px solid red;
+        font-family: "Montserrat", sans-serif;
+        font-size: 27px;
+        text-align: left;
+        padding: 20px;
+        width: 700px;
+      }
+      h3 {
+        color: rgb(54, 54, 54);
+        padding: 20px;
+        font-family: "Montserrat", sans-serif;
+        text-align: left;
+        border-left: 3px solid red;
+        font-size: 30px;
+        width: 700px;
+      }
+    }
+    img {
+      width: 400px;
+      height: 500px;
+      filter: blur(1px);
+      transition: transform 1s ease;
+      &:hover {
+        transform: scale(1.1);
+        filter: blur(0px);
+      }
     }
   }
 }
 
 .mainTres {
-  border-top: 1px solid black;
-  height: 800px;
+  height: 750px;
   p {
     margin-top: 50px;
-    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
     font-size: 60px;
     text-align: center;
-    color: rgb(119, 30, 30);
+    color: rgb(54, 54, 54);
   }
-  .SkillsPrimero {
-    margin-top: 100px;
+  .contenedor1 {
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-    .s1 {
-      &,
-      &::before,
-      &::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-      }
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg);
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
+    width: 100%;
+    height: 300px;
+    .habilidades {
+      h2 {
         font-family: "Montserrat", sans-serif;
-      }
-      &:before {
-        transform: rotate(-90deg);
-        content: "HTML";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px;
-      }
-      &:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px;
-      }
-    }
-    .s2 {
-      &,
-      &::before,
-      &::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-      }
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg);
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
+        color: rgb(54, 54, 54);
+        padding: 15px;
         text-align: center;
-        font-family: "Montserrat", sans-serif;
       }
-      &:before {
-        transform: rotate(-90deg);
-        content: "CSS";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px;
+      .barra {
+        width: 300px;
+        height: 20px;
+        background-color: rgba(255, 0, 0, 0.404);
+        border-radius: 10px;
+        border-right: 2px solid rgba(255, 0, 0, 0.404);
+        border-bottom: 2px solid rgba(255, 0, 0, 0.404);
+        box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
+        -webkit-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
+        -moz-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
       }
-      &:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px;
-      }
-    }
-    .s3 {
-      &,
-      &::before,
-      &::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-      }
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg);
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-      }
-      &:before {
-        transform: rotate(-90deg);
-        content: "JS";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px;
-      }
-      &:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px;
-      }
-    }
-    .s4 {
-      &,
-      &::before,
-      &::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-      }
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg);
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-      }
-      &:before {
-        transform: rotate(-90deg);
-        content: "GIT";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px;
-      }
-      &:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px;
+      .progreso {
+        width: var(--w);
+        height: 20px;
+        background-color: red;
+        border-radius: 10px;
+        animation: aumentar 3s ease-in-out;
+        @keyframes aumentar {
+          0% {
+            width: 5%;
+          }
+          100% {
+            width: var(--w);
+          }
+        }
       }
     }
   }
-  .SkillsSegundo {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    .s5 {
-      &,
-      &::before,
-      &::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-      }
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg);
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-      }
-      &:before {
-        transform: rotate(-90deg);
-        content: "AI";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px;
-      }
-      &:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px;
-      }
+}
+.contenedor2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  .habilidades {
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      color: rgb(54, 54, 54);
+      padding: 15px;
+      text-align: center;
     }
-    .s6 {
-      &,
-      &::before,
-      &::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-      }
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg);
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-      }
-      &:before {
-        transform: rotate(-90deg);
-        content: "PS";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px;
-      }
-      &:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px;
-      }
-    }
-    .s7 {
-      &,
-      &::before,
-      &::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-      }
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg);
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-      }
-      &:before {
-        transform: rotate(-90deg);
-        content: "PR";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px;
-      }
-      &:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px;
-      }
-    }
-    .s8 {
-      &,
-      &::before,
-      &::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%;
-      }
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg);
-      &::before,
-      &::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif;
-      }
-      &:before {
-        transform: rotate(-90deg);
-        content: "MS";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px;
-      }
-      &:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px;
+    .barra {
+      width: 300px;
+      height: 20px;
+      background-color: rgba(255, 0, 0, 0.404);
+      border-radius: 10px;
+      border-right: 2px solid rgba(255, 0, 0, 0.404);
+      border-bottom: 2px solid rgba(255, 0, 0, 0.404);
+      box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
+      -webkit-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
+      -moz-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
+      .progreso {
+        width: var(--w);
+        height: 20px;
+        background-color: red;
+        border-radius: 10px;
+        animation: aumentar 3s ease-in-out;
+        @keyframes aumentar {
+          0% {
+            width: 5%;
+          }
+          100% {
+            width: var(--w);
+          }
+        }
       }
     }
   }

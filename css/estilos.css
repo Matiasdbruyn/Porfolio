@@ -1,367 +1,272 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins:wght@100;200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-/*---------HEADER-----------*/
-.header {
+/*---------INDEX-----------*/
+body {
+  background-color: #d6d5d5; }
+
+.main {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#mainhe {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 150px;
-  background-color: brown; }
-  .header ul {
+  height: 150px; }
+  #mainhe ul {
     list-style: none; }
-    .header ul li a {
-      padding-right: 100px;
-      font-family: "Montserrat", sans-serif;
+    #mainhe ul li a {
+      padding-right: 50px;
+      font-family: "Poppins", sans-serif;
       text-decoration: none;
-      color: white;
-      font-size: 20px; }
+      color: #363636;
+      font-size: 25px;
+      transition-duration: 1s; }
+      #mainhe ul li a:hover {
+        color: red; }
 
-/*---------INDEX-----------*/
-#mainUno {
-  border-top: 1px solid black;
-  border-right: 1px solid black;
+#menu #Principio {
+  height: 1000px;
+  display: grid;
+  justify-content: center;
+  align-items: center; }
+  #menu #Principio h1 {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 70px;
+    padding-bottom: 10px; }
+  #menu #Principio .izquierda {
+    margin-right: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 90px;
+    animation: desplegarI 2s ease-in-out; }
+
+@keyframes desplegarI {
+  0% {
+    margin-right: 800px; }
+  100% {
+    margin-right: 300px; } }
+  #menu #Principio .derecha {
+    margin-left: 300px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 90px;
+    animation: desplegarD 2s ease-in-out; }
+
+@keyframes desplegarD {
+  0% {
+    margin-left: 800px; }
+  100% {
+    margin-left: 300px; } }
+  #menu #Principio h3 {
+    padding-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 70px; }
+
+#menu #Education {
+  height: 800px;
+  display: none;
+  justify-content: space-around;
+  align-items: center; }
+  #menu #Education .izqui {
+    display: flex;
+    border-left: 2px solid red;
+    padding: 20px; }
+    #menu #Education .izqui img {
+      width: 70px;
+      height: 70px; }
+    #menu #Education .izqui p {
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px;
+      width: 350px;
+      margin-left: 20px; }
+  #menu #Education .dere {
+    display: grid;
+    border-left: 2px solid red;
+    padding: 20px; }
+    #menu #Education .dere img {
+      width: 70px;
+      height: 70px; }
+
+#menu #Experience {
+  background-color: red;
+  height: 800px;
+  display: none; }
+
+#menu #Jobs {
+  background-color: green;
+  height: 800px;
+  display: none; }
+
+#menu #AboutMe {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 800px; }
-  #mainUno div h1 {
+  #menu #AboutMe div h1 {
+    color: #363636;
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     font-family: "Montserrat", sans-serif;
     font-size: 45px;
     text-align: left;
     padding: 20px; }
-  #mainUno div h2 {
-    border-left: 1px solid brown;
+  #menu #AboutMe div h2 {
+    color: #363636;
+    border-left: 3px solid red;
     font-family: "Montserrat", sans-serif;
     font-size: 27px;
     text-align: left;
     padding: 20px;
     width: 700px; }
-  #mainUno div h3 {
+  #menu #AboutMe div h3 {
+    color: #363636;
     padding: 20px;
     font-family: "Montserrat", sans-serif;
     text-align: left;
-    border-left: 1px solid brown;
+    border-left: 3px solid red;
     font-size: 30px;
     width: 700px; }
-  #mainUno img {
+  #menu #AboutMe img {
     width: 400px;
     height: 500px;
-    box-shadow: 7px 5px 37px -1px #050200;
-    -webkit-box-shadow: 7px 5px 37px -1px black;
-    -moz-box-shadow: 7px 5px 37px -1px black;
     filter: blur(1px);
-    transition: transform 1s ease-in-out; }
-    #mainUno img:hover {
+    transition: transform 1s ease; }
+    #menu #AboutMe img:hover {
       transform: scale(1.1);
       filter: blur(0px); }
 
 .mainTres {
-  border-top: 1px solid black;
-  height: 800px; }
+  height: 750px; }
   .mainTres p {
     margin-top: 50px;
-    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-family: "Poppins", sans-serif;
     font-size: 60px;
     text-align: center;
-    color: #771e1e; }
-  .mainTres .SkillsPrimero {
-    margin-top: 100px;
+    color: #363636; }
+  .mainTres .contenedor1 {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    .mainTres .SkillsPrimero .s1 {
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg); }
-      .mainTres .SkillsPrimero .s1, .mainTres .SkillsPrimero .s1::before, .mainTres .SkillsPrimero .s1::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%; }
-      .mainTres .SkillsPrimero .s1::before, .mainTres .SkillsPrimero .s1::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif; }
-      .mainTres .SkillsPrimero .s1:before {
-        transform: rotate(-90deg);
-        content: "HTML";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px; }
-      .mainTres .SkillsPrimero .s1:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px; }
-    .mainTres .SkillsPrimero .s2 {
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg); }
-      .mainTres .SkillsPrimero .s2, .mainTres .SkillsPrimero .s2::before, .mainTres .SkillsPrimero .s2::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%; }
-      .mainTres .SkillsPrimero .s2::before, .mainTres .SkillsPrimero .s2::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif; }
-      .mainTres .SkillsPrimero .s2:before {
-        transform: rotate(-90deg);
-        content: "CSS";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px; }
-      .mainTres .SkillsPrimero .s2:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px; }
-    .mainTres .SkillsPrimero .s3 {
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg); }
-      .mainTres .SkillsPrimero .s3, .mainTres .SkillsPrimero .s3::before, .mainTres .SkillsPrimero .s3::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%; }
-      .mainTres .SkillsPrimero .s3::before, .mainTres .SkillsPrimero .s3::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif; }
-      .mainTres .SkillsPrimero .s3:before {
-        transform: rotate(-90deg);
-        content: "JS";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px; }
-      .mainTres .SkillsPrimero .s3:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px; }
-    .mainTres .SkillsPrimero .s4 {
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg); }
-      .mainTres .SkillsPrimero .s4, .mainTres .SkillsPrimero .s4::before, .mainTres .SkillsPrimero .s4::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%; }
-      .mainTres .SkillsPrimero .s4::before, .mainTres .SkillsPrimero .s4::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif; }
-      .mainTres .SkillsPrimero .s4:before {
-        transform: rotate(-90deg);
-        content: "GIT";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px; }
-      .mainTres .SkillsPrimero .s4:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px; }
-  .mainTres .SkillsSegundo {
-    margin-top: 100px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    .mainTres .SkillsSegundo .s5 {
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg); }
-      .mainTres .SkillsSegundo .s5, .mainTres .SkillsSegundo .s5::before, .mainTres .SkillsSegundo .s5::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%; }
-      .mainTres .SkillsSegundo .s5::before, .mainTres .SkillsSegundo .s5::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif; }
-      .mainTres .SkillsSegundo .s5:before {
-        transform: rotate(-90deg);
-        content: "AI";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px; }
-      .mainTres .SkillsSegundo .s5:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px; }
-    .mainTres .SkillsSegundo .s6 {
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg); }
-      .mainTres .SkillsSegundo .s6, .mainTres .SkillsSegundo .s6::before, .mainTres .SkillsSegundo .s6::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%; }
-      .mainTres .SkillsSegundo .s6::before, .mainTres .SkillsSegundo .s6::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif; }
-      .mainTres .SkillsSegundo .s6:before {
-        transform: rotate(-90deg);
-        content: "PS";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px; }
-      .mainTres .SkillsSegundo .s6:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px; }
-    .mainTres .SkillsSegundo .s7 {
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg); }
-      .mainTres .SkillsSegundo .s7, .mainTres .SkillsSegundo .s7::before, .mainTres .SkillsSegundo .s7::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%; }
-      .mainTres .SkillsSegundo .s7::before, .mainTres .SkillsSegundo .s7::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif; }
-      .mainTres .SkillsSegundo .s7:before {
-        transform: rotate(-90deg);
-        content: "PR";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px; }
-      .mainTres .SkillsSegundo .s7:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px; }
-    .mainTres .SkillsSegundo .s8 {
-      background: linear-gradient(white 50%, brown 50%);
-      position: relative;
-      transform: rotate(90deg); }
-      .mainTres .SkillsSegundo .s8, .mainTres .SkillsSegundo .s8::before, .mainTres .SkillsSegundo .s8::after {
-        width: 180px;
-        height: 180px;
-        border-radius: 50%; }
-      .mainTres .SkillsSegundo .s8::before, .mainTres .SkillsSegundo .s8::after {
-        position: absolute;
-        top: 0;
-        left: 0;
-        text-align: center;
-        font-family: "Montserrat", sans-serif; }
-      .mainTres .SkillsSegundo .s8:before {
-        transform: rotate(-90deg);
-        content: "MS";
-        background: white content-box;
-        padding: 10px;
-        box-sizing: border-box;
-        font-size: 30px;
-        line-height: 140px; }
-      .mainTres .SkillsSegundo .s8:after {
-        content: "60%";
-        background: linear-gradient(transparent 50%, white 50%);
-        transform: scale(1.1) rotate(-90deg);
-        font-size: 20px;
-        line-height: 220px; }
-
-/*---------FOOTER-----------*/
-#footer {
-  border-top: 1px solid black;
-  background-color: #c09393; }
-  #footer h1 {
-    font-family: "Montserrat", sans-serif;
-    color: white;
-    font-size: 40px;
-    text-align: center;
-    padding: 30px;
-    text-decoration: overline; }
-  #footer .contacto {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 30px; }
-    #footer .contacto .redes {
-      margin-right: 300px; }
-      #footer .contacto .redes h2 {
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        font-size: 20px; }
-      #footer .contacto .redes a img {
-        width: 40px;
-        height: 40px;
-        margin-right: 15px;
-        float: inherit;
-        margin-top: 15px;
-        margin-left: 15px; }
-    #footer .contacto .telefono {
-      text-align: center; }
-      #footer .contacto .telefono h3 {
-        font-family: "Montserrat", sans-serif;
-        color: white;
-        font-size: 20px;
-        padding: 15px; }
-      #footer .contacto .telefono h4 {
-        font-family: "Montserrat", sans-serif;
-        color: white;
-        font-size: 20px; }
-    #footer .contacto .mail {
-      margin-left: 200px; }
-      #footer .contacto .mail h5 {
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        font-size: 20px;
-        text-align: center;
-        padding: 20px; }
-      #footer .contacto .mail h6 {
-        color: white;
-        font-family: "Montserrat", sans-serif;
-        font-size: 20px; }
-  #footer .derechos {
-    background-color: brown; }
-    #footer .derechos p {
+    width: 100%;
+    height: 300px; }
+    .mainTres .contenedor1 .habilidades h2 {
       font-family: "Montserrat", sans-serif;
-      font-size: 20px;
-      text-align: center;
-      color: white;
-      padding: 20px; }
+      color: #363636;
+      padding: 15px;
+      text-align: center; }
+    .mainTres .contenedor1 .habilidades .barra {
+      width: 300px;
+      height: 20px;
+      background-color: rgba(255, 0, 0, 0.404);
+      border-radius: 10px;
+      border-right: 2px solid rgba(255, 0, 0, 0.404);
+      border-bottom: 2px solid rgba(255, 0, 0, 0.404);
+      box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
+      -webkit-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
+      -moz-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479); }
+    .mainTres .contenedor1 .habilidades .progreso {
+      width: var(--w);
+      height: 20px;
+      background-color: red;
+      border-radius: 10px;
+      animation: aumentar 3s ease-in-out; }
+
+@keyframes aumentar {
+  0% {
+    width: 5%; }
+  100% {
+    width: var(--w); } }
+
+.contenedor2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 300px; }
+  .contenedor2 .habilidades h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #363636;
+    padding: 15px;
+    text-align: center; }
+  .contenedor2 .habilidades .barra {
+    width: 300px;
+    height: 20px;
+    background-color: rgba(255, 0, 0, 0.404);
+    border-radius: 10px;
+    border-right: 2px solid rgba(255, 0, 0, 0.404);
+    border-bottom: 2px solid rgba(255, 0, 0, 0.404);
+    box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
+    -webkit-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
+    -moz-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479); }
+    .contenedor2 .habilidades .barra .progreso {
+      width: var(--w);
+      height: 20px;
+      background-color: red;
+      border-radius: 10px;
+      animation: aumentar 3s ease-in-out; }
+
+@keyframes aumentar {
+  0% {
+    width: 5%; }
+  100% {
+    width: var(--w); } }
+
+/*---------FOOTER-----------*/
+#footer h1 {
+  color: #363636;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  padding: 30px;
+  text-decoration: overline; }
+
+#footer .contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: mover 15s linear infinite; }
+
+@keyframes mover {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(-100%); } }
+  #footer .contacto h1 {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: rgba(54, 54, 54, 0.068);
+    font-size: 45px; }
+    #footer .contacto h1 a {
+      font-size: 60px;
+      list-style: none;
+      color: #363636;
+      text-decoration: none;
+      filter: opacity(30%);
+      transition-duration: 1s; }
+      #footer .contacto h1 a:hover {
+        filter: opacity(100%); }
+  #footer .contacto img {
+    width: 60px;
+    height: 50px; }
+
+#footer .derechos {
+  background-color: #d6d5d5; }
+  #footer .derechos p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #363636;
+    padding: 20px; }

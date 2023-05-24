@@ -1,12 +1,13 @@
 let previoustitle = document.title;
 window.addEventListener("blur", () => {
   previoustitle = document.title;
-  document.title = "¡No te vayas! ¡Vuelve!";
+  document.title = "Do not go! Comes back!";
 });
 window.addEventListener("focus", () => {
   document.title = previoustitle;
 });
 
+/*
 const el = document.getElementById("poster");
 const height = el.clientHeight;
 const width = el.clientWidth;
@@ -31,3 +32,4 @@ scale (1)
 rotateX(0)
 rotateY(0)`;
 });
+*/
