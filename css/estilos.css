@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box; }
 
+html {
+  scroll-behavior: smooth; }
+
 /*---------INDEX-----------*/
 body {
   background-color: #d6d5d5; }
@@ -67,7 +70,7 @@ body {
   100% {
     margin-left: 300px; } }
   #menu #Principio h3 {
-    padding-top: 10px;
+    padding: 50px;
     font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 70px; }
@@ -79,36 +82,161 @@ body {
   align-items: center; }
   #menu #Education .izqui {
     display: flex;
+    flex-direction: column;
     border-left: 2px solid red;
     padding: 20px; }
-    #menu #Education .izqui img {
-      width: 70px;
-      height: 70px; }
-    #menu #Education .izqui p {
-      font-family: "Montserrat", sans-serif;
-      font-size: 20px;
-      width: 350px;
-      margin-left: 20px; }
+    #menu #Education .izqui div {
+      display: flex;
+      padding: 20px; }
+      #menu #Education .izqui div img {
+        width: 70px;
+        height: 70px; }
+      #menu #Education .izqui div p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        width: 350px;
+        margin-left: 20px; }
   #menu #Education .dere {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     border-left: 2px solid red;
     padding: 20px; }
-    #menu #Education .dere img {
-      width: 70px;
-      height: 70px; }
+    #menu #Education .dere div {
+      display: flex;
+      padding: 20px; }
+      #menu #Education .dere div img {
+        width: 70px;
+        height: 70px; }
+      #menu #Education .dere div p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+        width: 350px;
+        margin-left: 20px; }
 
 #menu #Experience {
-  background-color: red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   height: 800px;
-  display: none; }
+  padding: 50px; }
+  #menu #Experience .divtraba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px; }
+    #menu #Experience .divtraba #trabajo1 h1 {
+      font-family: "Poppins", sans-serif;
+      color: #363636;
+      font-size: 30px;
+      font-weight: 500; }
+      #menu #Experience .divtraba #trabajo1 h1 span {
+        padding: 30px;
+        font-family: "Poppins", sans-serif;
+        color: red;
+        font-size: 30px; }
+    #menu #Experience .divtraba #trabajo1 p {
+      display: none;
+      width: 800px;
+      padding: 10px;
+      margin-left: 75px;
+      font-family: "Poppins", sans-serif;
+      font-size: 35px;
+      text-shadow: 0 0 2px red; }
+    #menu #Experience .divtraba #trabajo2 a {
+      font-family: "Poppins", sans-serif;
+      color: #363636;
+      font-size: 30px;
+      font-weight: 500;
+      text-decoration: none; }
+      #menu #Experience .divtraba #trabajo2 a span {
+        padding: 30px;
+        font-family: "Poppins", sans-serif;
+        color: red;
+        font-size: 30px; }
+    #menu #Experience .divtraba #trabajo2 p {
+      display: none;
+      width: 800px;
+      padding: 10px;
+      margin-left: 75px;
+      font-family: "Poppins", sans-serif;
+      font-size: 35px;
+      text-shadow: 0 0 2px red; }
+    #menu #Experience .divtraba #trabajo3 h1 {
+      font-family: "Poppins", sans-serif;
+      color: #363636;
+      font-size: 30px;
+      font-weight: 500; }
+      #menu #Experience .divtraba #trabajo3 h1 span {
+        padding: 30px;
+        font-family: "Poppins", sans-serif;
+        color: red;
+        font-size: 30px; }
+    #menu #Experience .divtraba #trabajo3 p {
+      display: none;
+      width: 800px;
+      padding: 10px;
+      margin-left: 75px;
+      font-family: "Poppins", sans-serif;
+      font-size: 35px;
+      text-shadow: 0 0 2px red; }
 
 #menu #Jobs {
-  background-color: green;
-  height: 800px;
-  display: none; }
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 1500px; }
+  #menu #Jobs .tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #menu #Jobs .tarjetas a img {
+      width: 700px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 8px solid #363636;
+      filter: blur(2px);
+      transition: transform 1s ease; }
+      #menu #Jobs .tarjetas a img:hover {
+        transform: scale(1.1);
+        filter: blur(0px); }
+    #menu #Jobs .tarjetas h1 {
+      padding: 30px;
+      text-align: center;
+      color: #363636;
+      font-family: "Montserrat", sans-serif; }
+    #menu #Jobs .tarjetas p {
+      color: #363636;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px; }
+  #menu #Jobs .tarjetas2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #menu #Jobs .tarjetas2 a .img2 {
+      width: 700px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 8px solid #363636;
+      filter: blur(2px);
+      transition: transform 1s ease; }
+      #menu #Jobs .tarjetas2 a .img2:hover {
+        transform: scale(1.1);
+        filter: blur(0px); }
+    #menu #Jobs .tarjetas2 h1 {
+      padding: 30px;
+      text-align: center;
+      color: #363636;
+      font-family: "Montserrat", sans-serif; }
+    #menu #Jobs .tarjetas2 p {
+      color: #363636;
+      font-family: "Montserrat", sans-serif;
+      font-size: 20px; }
 
 #menu #AboutMe {
-  display: flex;
+  display: none;
   justify-content: space-around;
   align-items: center;
   height: 800px; }
@@ -237,7 +365,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: mover 15s linear infinite; }
+  animation: mover 12s linear infinite; }
 
 @keyframes mover {
   0% {

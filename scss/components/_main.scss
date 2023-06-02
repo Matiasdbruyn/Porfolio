@@ -74,7 +74,7 @@ body {
       }
     }
     h3 {
-      padding-top: 10px;
+      padding: 50px;
       font-family: "Montserrat", sans-serif;
       text-align: center;
       font-size: 70px;
@@ -87,41 +87,199 @@ body {
     align-items: center;
     .izqui {
       display: flex;
+      flex-direction: column;
       border-left: 2px solid red;
       padding: 20px;
-      img {
-        width: 70px;
-        height: 70px;
-      }
-      p {
-        font-family: "Montserrat", sans-serif;
-        font-size: 20px;
-        width: 350px;
-        margin-left: 20px;
+      div {
+        display: flex;
+        padding: 20px;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        p {
+          font-family: "Montserrat", sans-serif;
+          font-size: 20px;
+          width: 350px;
+          margin-left: 20px;
+        }
       }
     }
     .dere {
-      display: grid;
+      display: flex;
+      flex-direction: column;
       border-left: 2px solid red;
       padding: 20px;
-      img {
-        width: 70px;
-        height: 70px;
+      div {
+        display: flex;
+        padding: 20px;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        p {
+          font-family: "Montserrat", sans-serif;
+          font-size: 20px;
+          width: 350px;
+          margin-left: 20px;
+        }
       }
     }
   }
   #Experience {
-    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     height: 800px;
-    display: none;
+    padding: 50px;
+    .divtraba {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+      #trabajo1 {
+        h1 {
+          font-family: "Poppins", sans-serif;
+          color: rgb(54, 54, 54);
+          font-size: 30px;
+          font-weight: 500;
+          span {
+            padding: 30px;
+            font-family: "Poppins", sans-serif;
+            color: red;
+            font-size: 30px;
+          }
+        }
+        p {
+          display: none;
+          width: 800px;
+          padding: 10px;
+          margin-left: 75px;
+          font-family: "Poppins", sans-serif;
+          font-size: 35px;
+          text-shadow: 0 0 2px red;
+        }
+      }
+      #trabajo2 {
+        a {
+          font-family: "Poppins", sans-serif;
+          color: rgb(54, 54, 54);
+          font-size: 30px;
+          font-weight: 500;
+          text-decoration: none;
+          span {
+            padding: 30px;
+            font-family: "Poppins", sans-serif;
+            color: red;
+            font-size: 30px;
+          }
+        }
+        p {
+          display: none;
+          width: 800px;
+          padding: 10px;
+          margin-left: 75px;
+          font-family: "Poppins", sans-serif;
+          font-size: 35px;
+          text-shadow: 0 0 2px red;
+        }
+      }
+      #trabajo3 {
+        h1 {
+          font-family: "Poppins", sans-serif;
+          color: rgb(54, 54, 54);
+          font-size: 30px;
+          font-weight: 500;
+          span {
+            padding: 30px;
+            font-family: "Poppins", sans-serif;
+            color: red;
+            font-size: 30px;
+          }
+        }
+        p {
+          display: none;
+          width: 800px;
+          padding: 10px;
+          margin-left: 75px;
+          font-family: "Poppins", sans-serif;
+          font-size: 35px;
+          text-shadow: 0 0 2px red;
+        }
+      }
+    }
   }
   #Jobs {
-    background-color: green;
-    height: 800px;
     display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 1500px;
+    .tarjetas {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        img {
+          width: 700px;
+          height: 450px;
+          object-fit: cover;
+          border-radius: 10px;
+          border: 8px solid rgb(54, 54, 54);
+          filter: blur(2px);
+          transition: transform 1s ease;
+          &:hover {
+            transform: scale(1.1);
+            filter: blur(0px);
+          }
+        }
+      }
+      h1 {
+        padding: 30px;
+        text-align: center;
+        color: rgb(54, 54, 54);
+        font-family: "Montserrat", sans-serif;
+      }
+      p {
+        color: rgb(54, 54, 54);
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+      }
+    }
+    .tarjetas2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      a {
+        .img2 {
+          width: 700px;
+          height: 450px;
+          object-fit: cover;
+          border-radius: 10px;
+          border: 8px solid rgb(54, 54, 54);
+          filter: blur(2px);
+          transition: transform 1s ease;
+          &:hover {
+            transform: scale(1.1);
+            filter: blur(0px);
+          }
+        }
+      }
+      h1 {
+        padding: 30px;
+        text-align: center;
+        color: rgb(54, 54, 54);
+        font-family: "Montserrat", sans-serif;
+      }
+      p {
+        color: rgb(54, 54, 54);
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+      }
+    }
   }
   #AboutMe {
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
     height: 800px;

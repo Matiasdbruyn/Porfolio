@@ -7,6 +7,27 @@ window.addEventListener("focus", () => {
   document.title = previoustitle;
 });
 
+function mostrar() {
+  document.getElementById(`AboutMe`).style.display = `flex`;
+}
+function mostrar2() {
+  document.getElementById(`Education`).style.display = `flex`;
+}
+function mostrar3() {
+  document.getElementById(`Experience`).style.display = `flex`;
+}
+function mostrar4() {
+  document.getElementById(`Jobs`).style.display = `flex`;
+}
+/*
+function ocultar() {
+  document.getElementById(
+    `AboutMe``Education``Experience``Jobs`
+  ).style.display = `none`;
+} */
+/*function trabajo2() {
+  document.getElementById(`trabajo2`).style.display = `flex`;
+}*/
 /*
 const el = document.getElementById("poster");
 const height = el.clientHeight;
