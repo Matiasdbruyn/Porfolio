@@ -12,18 +12,34 @@
   <body>
     <main class="main">
       <section id="mainhe">
-        <ul>
-          <li>
-            <a href="#AboutMe" onclick="mostrar();">About Me</a>
-            <a href="#Education" onclick="mostrar2();">Education</a>
-            <a href="#Experience" onclick="mostrar3();">Experience</a>
-            <a href="#Jobs" onclick="mostrar4();">Jobs</a>
-            <a href="#footer" class="abajo">Contact</a>
-          </li>
-        </ul>
+        <a href="#menu" id="boton-menu"
+          >Menú <img src="./img/FlechaMenu.png" alt=""
+        /></a>
+        <nav id="menu">
+          <ul>
+            <li>
+              <a href="#AboutMe" onclick="mostrar();">About Me</a>
+              <a href="#Education" onclick="mostrar2();">Education</a>
+              <a href="#Experience" onclick="mostrar3();">Experience</a>
+              <a href="#Jobs" onclick="mostrar4();">Jobs</a>
+              <a href="#footer" class="abajo">Contact</a>
+            </li>
+            <div>
+              <a href="https://github.com/Matiasdbruyn" target="_blank"
+                >GITHUB</a
+              >
+              <a
+                href="https://www.linkedin.com/in/matias-nicolas-de-bruyn-125712208/"
+                target="_blank"
+                >LINKEDIN</a
+              >
+            </div>
+          </ul>
+          <a href="" id="salirmenu"><img src="./img/X.png" alt="" /></a>
+        </nav>
       </section>
       <div id="menu">
-        <section id="Principio">
+        <section id="Principio" onchange="ocultarMain()">
           <h1>WELCOME</h1>
           <div><h1 class="izquierda">I AM AN</h1></div>
           <div><h1 class="derecha">INTERACTIVE</h1></div>
@@ -37,74 +53,72 @@
             <div>
               <img src="./img/educacion.png" alt="" />
               <p>
-                Primaria y Secundaria completa en el Colegio San Juan XXIII,
-                Ramos Mejia. Titulo: Técnico en Multimedios
+                Complete Primary and Secondary at Colegio San Juan XXIII. Title:
+                Multimedia Technician
               </p>
             </div>
             <div>
               <img src="./img/educacion.png" alt="" />
               <p>
-                Estudiante de Nutrición cursando el ultimo año de la carrera en
-                la Universidad ISALUD (30 materias aprobadas)
+                Nutrition student studying the last year of the degree at the
+                ISALUD University (30 subjects approved)
               </p>
             </div>
           </div>
           <div class="dere">
             <div>
               <img src="./img/educacion.png" alt="" />
-              <p>Curso de Desarrollo Web, en Coderhouse</p>
+              <p>Web Development Course, at Coderhouse</p>
             </div>
             <div>
               <img src="./img/educacion.png" alt="" />
+              <p>Entrance course for the web development career at UNLAM</p>
             </div>
           </div>
         </section>
         <section id="Experience">
           <div class="divtraba">
-            <div id="trabajo1">
-              <h1><span>1</span> Administrativo <span>-</span></h1>
-              <p>
-                Trabajo administrativo acerca de la presentación ante las
-                oficinas de Mandamientos y Notificaciones de Provincia y Capital
-                Federal de Cédulas y Mandamientos emitidos por los diferentes
-                juzgados
-              </p>
-            </div>
             <div id="trabajo2">
-              <a href=""
-                ><span>2</span> Pasantia en el area de diseño <span>-</span></a
+              <a href="#trabajo2p" onclick="Traba2();"
+                ><span>1</span> Internship in the design area <span>-</span></a
               >
-              <p>
-                Pasantia del area de diseño en el sector de Comunicación y
-                prensa en el INCUCAI, realizando planificación, estrategias y
-                contenido para las redes sociales
+              <p id="trabajo2p">
+                Internship in the design area in the Communication and press
+                sector at INCUCAI, carrying out planning, strategies and content
+                for social networks
               </p>
             </div>
             <div id="trabajo3">
-              <h1>
-                <span>3</span> Capacitador en el area de sistema <span>-</span>
-              </h1>
-              <p>
-                Capacitador de la area de sistema de la empresa Bymovi en la
-                obra social OSPSIP
+              <a href="#trabajo3p" onclick="Traba3();"
+                ><span>2</span> Trainer in the systems area <span>-</span></a
+              >
+              <p id="trabajo3p">
+                Trainer of the system area of the company Bymovi in the social
+                work OSPSIP
               </p>
             </div>
           </div>
         </section>
         <section id="Jobs">
-          <div class="tarjetas">
-            <a href="https://matiasdbruyn.github.io/Pachux/" target="_blank"
-              ><img src="./img/cafe.jpg" alt=""
-            /></a>
-            <h1>PACHUX</h1>
-            <p>The best of coffee here, live a unique experience</p>
-          </div>
-          <div class="tarjetas2">
-            <a href="https://matiasdbruyn.github.io/ArquiAires/" target="_blank"
-              ><img class="img2" src="./img/edificios.jpg" alt=""
-            /></a>
-            <h1>ARQUIAIRES</h1>
-            <p>All the architecture of Buenos Aires in its maximum splendor</p>
+          <h1>My projects</h1>
+          <div id="parte1">
+            <div id="pachux">
+              <h1>PACHUX</h1>
+              <p>
+                Web page made as a presentation of the Final Project for the Web
+                Development course. It is about coffee and all its
+                characteristics. Built with HTML, CSS and SASS
+              </p>
+              <button onclick="pachux()">VISIT</button>
+            </div>
+            <div id="arquiaires">
+              <h1>ARQUIAIRES</h1>
+              <p>
+                Page made as a fictitious project, where different skills are
+                applied. It is created with HTML, CSS and Javascript
+              </p>
+              <button onclick="arquiaires()">VISIT</button>
+            </div>
           </div>
         </section>
         <section id="AboutMe">
@@ -182,6 +196,7 @@
     <footer id="footer">
       <h1>Get in Touch with Me</h1>
       <div class="contacto">
+        <img src="./img/flecha.png" alt="" />
         <h1>
           <a href="https://github.com/Matiasdbruyn" target="_blank">GITHUB</a>
         </h1>

@@ -25,9 +25,14 @@ function ocultar() {
     `AboutMe``Education``Experience``Jobs`
   ).style.display = `none`;
 } */
-/*function trabajo2() {
-  document.getElementById(`trabajo2`).style.display = `flex`;
-}*/
+
+function Traba2() {
+  document.getElementById(`trabajo2p`).style.display = `flex`;
+}
+function Traba3() {
+  document.getElementById(`trabajo3p`).style.display = `flex`;
+}
+
 /*
 const el = document.getElementById("poster");
 const height = el.clientHeight;
@@ -54,3 +59,32 @@ rotateX(0)
 rotateY(0)`;
 });
 */
+var botonMenu = document.getElementById("boton-menu");
+var menu = document.getElementById("menu");
+var salirmenu = document.getElementById("salirmenu");
+
+botonMenu.addEventListener("click", function () {
+  menu.style.display = "flex";
+  botonMenu.style.display = "none";
+});
+salirmenu.addEventListener("click", function () {
+  menu.style.display = "none";
+  botonMenu.style.display = "flex";
+});
+
+/*var apartados = ["AboutMe", "Education", "Experience", "Jobs", "footer"];
+
+for (var i = 0; i < apartados.length; i++) {
+  var apartado = document.getElementById(apartados[i]);
+  apartado.addEventListener("click", function () {
+    menu.style.display = "none";
+    botonMenu.style.display = "block";
+  });
+}
+*/
+function pachux() {
+  window.open("https://matiasdbruyn.github.io/Pachux/");
+}
+function arquiaires() {
+  window.open("https://matiasdbruyn.github.io/ArquiAires/");
+}

@@ -12,22 +12,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: mover 12s linear infinite;
+    animation: mover 15s linear infinite;
     @keyframes mover {
       0% {
-        transform: translateX(100%);
+        transform: translateX(135%);
       }
       100% {
-        transform: translateX(-100%);
+        transform: translateX(-135%);
       }
     }
     h1 {
-      font-family: "Montserrat", sans-serif;
       text-decoration: none;
       color: rgba(54, 54, 54, 0.068);
-      font-size: 45px;
       a {
-        font-size: 60px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 80px;
         list-style: none;
         color: rgb(54, 54, 54);
         text-decoration: none;
