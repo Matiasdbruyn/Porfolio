@@ -13,7 +13,7 @@
     <main class="main">
       <section id="mainhe">
         <a href="#menu" id="boton-menu"
-          >Menú <img src="./img/FlechaMenu.png" alt=""
+          >Menu <img src="./img/FlechaMenu.png" alt=""
         /></a>
         <nav id="menu">
           <ul>
@@ -22,16 +22,16 @@
               <a href="#Education" onclick="mostrar2();">Education</a>
               <a href="#Experience" onclick="mostrar3();">Experience</a>
               <a href="#Jobs" onclick="mostrar4();">Jobs</a>
-              <a href="#footer" class="abajo">Contact</a>
+              <a href="#footer" class="abajo" onclick="mostrar5();">Contact</a>
             </li>
             <div>
               <a href="https://github.com/Matiasdbruyn" target="_blank"
-                >GITHUB</a
+                ><img src="./img/github.png" id="git" alt=""></a
               >
               <a
                 href="https://www.linkedin.com/in/matias-nicolas-de-bruyn-125712208/"
                 target="_blank"
-                >LINKEDIN</a
+                ><img src="./img/linkedin.png" id="linkedin" alt=""></a
               >
             </div>
           </ul>
@@ -39,7 +39,7 @@
         </nav>
       </section>
       <div id="menu">
-        <section id="Principio" onchange="ocultarMain()">
+        <section id="Principio" >
           <h1>WELCOME</h1>
           <div><h1 class="izquierda">I AM AN</h1></div>
           <div><h1 class="derecha">INTERACTIVE</h1></div>
@@ -103,21 +103,24 @@
           <h1>My projects</h1>
           <div id="parte1">
             <div id="pachux">
-              <h1>PACHUX</h1>
-              <p>
-                Web page made as a presentation of the Final Project for the Web
-                Development course. It is about coffee and all its
-                characteristics. Built with HTML, CSS and SASS
-              </p>
-              <button onclick="pachux()">VISIT</button>
+              <div id="pachuxcont">
+                <h1>PACHUX</h1>
+                <p>
+                  Web page made as a presentation of the Final Project for the
+                  Web Development course. It is about coffee and all its
+                  characteristics. Built with HTML, CSS and SASS
+                </p>
+                <button onclick="pachux()">VISIT</button>
+              </div>
             </div>
             <div id="arquiaires">
-              <h1>ARQUIAIRES</h1>
-              <p>
+              <div id="arquicont">
+                <h1>ARQUIAIRES</h1>
+                <p>
                 Page made as a fictitious project, where different skills are
                 applied. It is created with HTML, CSS and Javascript
-              </p>
-              <button onclick="arquiaires()">VISIT</button>
+                </p>
+                <button onclick="arquiaires()">VISIT</button>
             </div>
           </div>
         </section>
@@ -142,54 +145,30 @@
       <p>SKILLS</p>
       <div class="contenedor1">
         <div class="habilidades">
-          <h2>HTML</h2>
-          <div class="barra">
-            <div class="progreso" style="--w: 90%"></div>
-          </div>
+          <img src="./img/html-5.png" alt="">
         </div>
         <div class="habilidades">
-          <h2>CSS</h2>
-          <div class="barra">
-            <div class="progreso" style="--w: 80%"></div>
-          </div>
+          <img src="./img/css-3.png" alt="">
         </div>
         <div class="habilidades">
-          <h2>JS</h2>
-          <div class="barra">
-            <div class="progreso" style="--w: 50%"></div>
-          </div>
+          <img src="./img/js.png" alt="">
         </div>
         <div class="habilidades">
-          <h2>GIT</h2>
-          <div class="barra">
-            <div class="progreso" style="--w: 30%"></div>
-          </div>
+          <img src="./img/git.png" alt="">
         </div>
       </div>
       <div class="contenedor2">
         <div class="habilidades">
-          <h2>AI</h2>
-          <div class="barra">
-            <div class="progreso" style="--w: 95%"></div>
-          </div>
+          <img src="./img/ilustrador.png" alt="">
         </div>
         <div class="habilidades">
-          <h2>PS</h2>
-          <div class="barra">
-            <div class="progreso" style="--w: 75%"></div>
-          </div>
+          <img src="./img/photoshop.png" alt="">
         </div>
         <div class="habilidades">
-          <h2>PR</h2>
-          <div class="barra">
-            <div class="progreso" style="--w: 58%"></div>
-          </div>
+          <img src="./img/premiere.png" alt="" >
         </div>
         <div class="habilidades">
-          <h2>MS</h2>
-          <div class="barra">
-            <div class="progreso" style="--w: 100%"></div>
-          </div>
+          <img src="./img/microsoft.png" alt="">
         </div>
       </div>
     </section>

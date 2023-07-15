@@ -12,6 +12,9 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   #boton-menu {
     position: absolute;
     top: 30px;
@@ -32,16 +35,16 @@ body {
     }
   }
   #menu {
-    display: none;
+    display: flex;
     justify-content: space-between;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.644);
+    background-color: white;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 30%;
     height: 500vh;
-    transition: 3s ease;
+    transition: 1s ease-out;
     ul {
       list-style: none;
       li {
@@ -64,22 +67,51 @@ body {
         }
       }
       div {
-        margin-top: 200px;
+        margin-top: 150px;
         display: flex;
         justify-content: space-evenly;
         a {
-          font-family: "Montserrat", sans-serif;
-          text-decoration: none;
-          font-size: 25px;
-          color: rgb(54, 54, 54);
-          transition-duration: 1s;
-          &:hover {
-            transform: scale(1.2);
+          #git {
+            padding: 10px;
+            width: 80px;
+            height: 80px;
+            transition: 0.25s;
+            border-radius: 50px;
+            &:hover {
+              transform: scale(1.1);
+              background-color: rgba(0, 0, 0, 0.459);
+              animation: contact 0.4s linear;
+            }
+          }
+          #linkedin {
+            padding: 10px;
+            width: 80px;
+            height: 80px;
+            transition: 0.25s;
+            &:hover {
+              transform: scale(1.1);
+              animation: contact 0.4s linear;
+            }
+          }
+          @keyframes contact {
+            40% {
+              transform: scale(1.4);
+            }
+            60% {
+              transform: scale(0.8);
+            }
+            80% {
+              transform: scale(1.2);
+            }
+            100% {
+              transform: scale(1);
+            }
           }
         }
       }
     }
     #salirmenu {
+      transition: 1s ease-in-out;
       img {
         width: 25px;
         height: 25px;
@@ -252,11 +284,11 @@ body {
     }
   }
   #Jobs {
-    display: flex;
+    display: none;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    height: 1500px;
+    height: 1000px;
     h1 {
       text-align: center;
       text-transform: uppercase;
@@ -266,14 +298,10 @@ body {
       color: rgb(54, 54, 54);
     }
     #parte1 {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
       #pachux {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         background-image: url(../img/cafe.jpg);
         background-size: cover;
         background-position: center;
@@ -281,32 +309,34 @@ body {
         height: 400px;
         transition-duration: 1s;
         &:hover {
-          transform: scale(1.1);
-          background: rgba(255, 0, 0, 0.514);
+          background: rgba(255, 0, 0, 0.39);
         }
-        h1 {
-          font-size: 30px;
-        }
-        p {
-          text-align: center;
-          width: 80%;
-          font-family: "Poppins", sans-serif;
-        }
-        button {
-          font-family: "Poppins", sans-serif;
-          font-weight: 500;
-          font-size: 15px;
-          width: 80px;
-          border-radius: 15px;
-          border: none;
-          cursor: pointer;
+        #pachuxcont {
+          display: none;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 100%;
+          h1 {
+            font-size: 30px;
+          }
+          p {
+            text-align: center;
+            width: 80%;
+            font-family: "Poppins", sans-serif;
+          }
+          button {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            width: 80px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+          }
         }
       }
       #arquiaires {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
         background-image: url(../img/edificios.jpg);
         background-size: cover;
         background-position: center;
@@ -314,25 +344,31 @@ body {
         height: 400px;
         transition-duration: 1s;
         &:hover {
-          transform: scale(1.1);
           background: rgba(255, 0, 0, 0.514);
         }
-        h1 {
-          font-size: 30px;
-        }
-        p {
-          text-align: center;
-          width: 80%;
-          font-family: "Poppins", sans-serif;
-        }
-        button {
-          font-family: "Poppins", sans-serif;
-          font-weight: 500;
-          font-size: 15px;
-          width: 80px;
-          border-radius: 15px;
-          border: none;
-          cursor: pointer;
+        #arquicont {
+          display: none;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          height: 100%;
+          h1 {
+            font-size: 30px;
+          }
+          p {
+            text-align: center;
+            width: 80%;
+            font-family: "Poppins", sans-serif;
+          }
+          button {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            width: 80px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+          }
         }
       }
     }
@@ -389,51 +425,29 @@ body {
 .mainTres {
   height: 750px;
   p {
-    margin-top: 50px;
+    margin-left: 80px;
     font-weight: 800;
     font-family: "Poppins", sans-serif;
     font-size: 60px;
-    text-align: center;
+    text-align: left;
+    text-decoration: underline;
     color: rgb(54, 54, 54);
   }
   .contenedor1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 300px;
     .habilidades {
-      h2 {
-        font-family: "Montserrat", sans-serif;
-        color: rgb(54, 54, 54);
-        padding: 15px;
-        text-align: center;
-      }
-      .barra {
-        width: 300px;
-        height: 20px;
-        background-color: rgba(255, 0, 0, 0.404);
-        border-radius: 10px;
-        border-right: 2px solid rgba(255, 0, 0, 0.404);
-        border-bottom: 2px solid rgba(255, 0, 0, 0.404);
-        box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-        -webkit-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-        -moz-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-      }
-      .progreso {
-        width: var(--w);
-        height: 20px;
-        background-color: red;
-        border-radius: 10px;
-        animation: aumentar 3s ease-in-out;
-        @keyframes aumentar {
-          0% {
-            width: 5%;
-          }
-          100% {
-            width: var(--w);
-          }
+      img {
+        width: 140px;
+        height: 140px;
+        padding: 10px;
+        transition-duration: 0.5s;
+        &:hover {
+          margin-bottom: 80px;
         }
       }
     }
@@ -442,41 +456,18 @@ body {
 .contenedor2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 300px;
   .habilidades {
-    h2 {
-      font-family: "Montserrat", sans-serif;
-      color: rgb(54, 54, 54);
-      padding: 15px;
-      text-align: center;
-    }
-    .barra {
-      width: 300px;
-      height: 20px;
-      background-color: rgba(255, 0, 0, 0.404);
-      border-radius: 10px;
-      border-right: 2px solid rgba(255, 0, 0, 0.404);
-      border-bottom: 2px solid rgba(255, 0, 0, 0.404);
-      box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-      -webkit-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-      -moz-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-      .progreso {
-        width: var(--w);
-        height: 20px;
-        background-color: red;
-        border-radius: 10px;
-        animation: aumentar 3s ease-in-out;
-        @keyframes aumentar {
-          0% {
-            width: 5%;
-          }
-          100% {
-            width: var(--w);
-          }
-        }
+    img {
+      width: 140px;
+      height: 140px;
+      padding: 10px;
+      transition-duration: 0.5s;
+      &:hover {
+        margin-bottom: 80px;
       }
     }
   }

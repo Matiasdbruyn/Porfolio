@@ -20,7 +20,10 @@ body {
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
-  height: 80px; }
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
   #mainhe #boton-menu {
     position: absolute;
     top: 30px;
@@ -38,16 +41,16 @@ body {
       width: 25px;
       height: 25px; }
   #mainhe #menu {
-    display: none;
+    display: flex;
     justify-content: space-between;
     padding: 50px;
-    background-color: rgba(255, 255, 255, 0.644);
+    background-color: white;
     position: fixed;
     top: 0;
-    left: 0;
+    left: -100%;
     width: 30%;
     height: 500vh;
-    transition: 3s ease; }
+    transition: 1s ease-out; }
     #mainhe #menu ul {
       list-style: none; }
       #mainhe #menu ul li {
@@ -67,20 +70,42 @@ body {
           #mainhe #menu ul li a:hover {
             color: #363636; }
       #mainhe #menu ul div {
-        margin-top: 200px;
+        margin-top: 150px;
         display: flex;
         justify-content: space-evenly; }
-        #mainhe #menu ul div a {
-          font-family: "Montserrat", sans-serif;
-          text-decoration: none;
-          font-size: 25px;
-          color: #363636;
-          transition-duration: 1s; }
-          #mainhe #menu ul div a:hover {
-            transform: scale(1.2); }
-    #mainhe #menu #salirmenu img {
-      width: 25px;
-      height: 25px; }
+        #mainhe #menu ul div a #git {
+          padding: 10px;
+          width: 80px;
+          height: 80px;
+          transition: 0.25s;
+          border-radius: 50px; }
+          #mainhe #menu ul div a #git:hover {
+            transform: scale(1.1);
+            background-color: rgba(0, 0, 0, 0.459);
+            animation: contact 0.4s linear; }
+        #mainhe #menu ul div a #linkedin {
+          padding: 10px;
+          width: 80px;
+          height: 80px;
+          transition: 0.25s; }
+          #mainhe #menu ul div a #linkedin:hover {
+            transform: scale(1.1);
+            animation: contact 0.4s linear; }
+
+@keyframes contact {
+  40% {
+    transform: scale(1.4); }
+  60% {
+    transform: scale(0.8); }
+  80% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+    #mainhe #menu #salirmenu {
+      transition: 1s ease-in-out; }
+      #mainhe #menu #salirmenu img {
+        width: 25px;
+        height: 25px; }
 
 #menu #Principio {
   height: 1000px;
@@ -219,11 +244,11 @@ body {
       -webkit-text-stroke-color: #363636; }
 
 #menu #Jobs {
-  display: flex;
+  display: none;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  height: 1500px; }
+  height: 1000px; }
   #menu #Jobs h1 {
     text-align: center;
     text-transform: uppercase;
@@ -232,14 +257,10 @@ body {
     font-weight: 600;
     color: #363636; }
   #menu #Jobs #parte1 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px; }
     #menu #Jobs #parte1 #pachux {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
       background-image: url(../img/cafe.jpg);
       background-size: cover;
       background-position: center;
@@ -247,27 +268,28 @@ body {
       height: 400px;
       transition-duration: 1s; }
       #menu #Jobs #parte1 #pachux:hover {
-        transform: scale(1.1);
-        background: rgba(255, 0, 0, 0.514); }
-      #menu #Jobs #parte1 #pachux h1 {
-        font-size: 30px; }
-      #menu #Jobs #parte1 #pachux p {
-        text-align: center;
-        width: 80%;
-        font-family: "Poppins", sans-serif; }
-      #menu #Jobs #parte1 #pachux button {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        width: 80px;
-        border-radius: 15px;
-        border: none;
-        cursor: pointer; }
+        background: rgba(255, 0, 0, 0.39); }
+      #menu #Jobs #parte1 #pachux #pachuxcont {
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%; }
+        #menu #Jobs #parte1 #pachux #pachuxcont h1 {
+          font-size: 30px; }
+        #menu #Jobs #parte1 #pachux #pachuxcont p {
+          text-align: center;
+          width: 80%;
+          font-family: "Poppins", sans-serif; }
+        #menu #Jobs #parte1 #pachux #pachuxcont button {
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          width: 80px;
+          border-radius: 15px;
+          border: none;
+          cursor: pointer; }
     #menu #Jobs #parte1 #arquiaires {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
       background-image: url(../img/edificios.jpg);
       background-size: cover;
       background-position: center;
@@ -275,22 +297,27 @@ body {
       height: 400px;
       transition-duration: 1s; }
       #menu #Jobs #parte1 #arquiaires:hover {
-        transform: scale(1.1);
         background: rgba(255, 0, 0, 0.514); }
-      #menu #Jobs #parte1 #arquiaires h1 {
-        font-size: 30px; }
-      #menu #Jobs #parte1 #arquiaires p {
-        text-align: center;
-        width: 80%;
-        font-family: "Poppins", sans-serif; }
-      #menu #Jobs #parte1 #arquiaires button {
-        font-family: "Poppins", sans-serif;
-        font-weight: 500;
-        font-size: 15px;
-        width: 80px;
-        border-radius: 15px;
-        border: none;
-        cursor: pointer; }
+      #menu #Jobs #parte1 #arquiaires #arquicont {
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%; }
+        #menu #Jobs #parte1 #arquiaires #arquicont h1 {
+          font-size: 30px; }
+        #menu #Jobs #parte1 #arquiaires #arquicont p {
+          text-align: center;
+          width: 80%;
+          font-family: "Poppins", sans-serif; }
+        #menu #Jobs #parte1 #arquiaires #arquicont button {
+          font-family: "Poppins", sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+          width: 80px;
+          border-radius: 15px;
+          border: none;
+          cursor: pointer; }
 
 #menu #AboutMe {
   display: none;
@@ -333,81 +360,42 @@ body {
 .mainTres {
   height: 750px; }
   .mainTres p {
-    margin-top: 50px;
+    margin-left: 80px;
     font-weight: 800;
     font-family: "Poppins", sans-serif;
     font-size: 60px;
-    text-align: center;
+    text-align: left;
+    text-decoration: underline;
     color: #363636; }
   .mainTres .contenedor1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     height: 300px; }
-    .mainTres .contenedor1 .habilidades h2 {
-      font-family: "Montserrat", sans-serif;
-      color: #363636;
-      padding: 15px;
-      text-align: center; }
-    .mainTres .contenedor1 .habilidades .barra {
-      width: 300px;
-      height: 20px;
-      background-color: rgba(255, 0, 0, 0.404);
-      border-radius: 10px;
-      border-right: 2px solid rgba(255, 0, 0, 0.404);
-      border-bottom: 2px solid rgba(255, 0, 0, 0.404);
-      box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-      -webkit-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-      -moz-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479); }
-    .mainTres .contenedor1 .habilidades .progreso {
-      width: var(--w);
-      height: 20px;
-      background-color: red;
-      border-radius: 10px;
-      animation: aumentar 3s ease-in-out; }
-
-@keyframes aumentar {
-  0% {
-    width: 5%; }
-  100% {
-    width: var(--w); } }
+    .mainTres .contenedor1 .habilidades img {
+      width: 140px;
+      height: 140px;
+      padding: 10px;
+      transition-duration: 0.5s; }
+      .mainTres .contenedor1 .habilidades img:hover {
+        margin-bottom: 80px; }
 
 .contenedor2 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 300px; }
-  .contenedor2 .habilidades h2 {
-    font-family: "Montserrat", sans-serif;
-    color: #363636;
-    padding: 15px;
-    text-align: center; }
-  .contenedor2 .habilidades .barra {
-    width: 300px;
-    height: 20px;
-    background-color: rgba(255, 0, 0, 0.404);
-    border-radius: 10px;
-    border-right: 2px solid rgba(255, 0, 0, 0.404);
-    border-bottom: 2px solid rgba(255, 0, 0, 0.404);
-    box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-    -webkit-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479);
-    -moz-box-shadow: 7px 5px 37px -1px rgba(0, 0, 0, 0.479); }
-    .contenedor2 .habilidades .barra .progreso {
-      width: var(--w);
-      height: 20px;
-      background-color: red;
-      border-radius: 10px;
-      animation: aumentar 3s ease-in-out; }
-
-@keyframes aumentar {
-  0% {
-    width: 5%; }
-  100% {
-    width: var(--w); } }
+  .contenedor2 .habilidades img {
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+    transition-duration: 0.5s; }
+    .contenedor2 .habilidades img:hover {
+      margin-bottom: 80px; }
 
 /*---------FOOTER-----------*/
 #footer h1 {
