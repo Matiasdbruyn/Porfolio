@@ -1,0 +1,85 @@
+/*------MEDIAQUERY------*/
+
+@media screen and (max-width: 1210px) {
+  #menu #Principio {
+    height: 700px;
+  }
+  #menu #Principio h1 {
+    font-size: 40px;
+  }
+  #menu #Principio .izquierda {
+    font-size: 60px;
+  }
+  #menu #Principio .derecha {
+    font-size: 60px;
+  }
+  #menu #Principio h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 858px) {
+  #menu #Principio {
+    height: 700px;
+  }
+  #menu #Principio h1 {
+    font-size: 40px;
+  }
+  #menu #Principio .izquierda {
+    margin-right: 150px;
+    font-size: 50px;
+  }
+  #menu #Principio .derecha {
+    margin-left: 150px;
+    font-size: 50px;
+  }
+  #menu #Principio h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 626px) {
+  #menu #Principio {
+    height: 700px;
+  }
+  #menu #Principio h1 {
+    font-size: 40px;
+  }
+  #menu #Principio .izquierda {
+    margin-right: 100px;
+    font-size: 40px;
+  }
+  #menu #Principio .derecha {
+    margin-left: 100px;
+    font-size: 40px;
+  }
+  #menu #Principio h3 {
+    font-size: 40px;
+  }
+  #footer .derechos p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 746px) {
+  .mainTres .contenedor1 .habilidades img {
+    width: 100px;
+    height: 100px;
+  }
+  .mainTres .contenedor2 .habilidades img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 506px) {
+  .mainTres .contenedor1 .habilidades img {
+    width: 80px;
+    height: 80px;
+  }
+  .mainTres .contenedor2 .habilidades img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 490px) {
+  #footer h1 {
+    font-size: 30px;
+  }
+}

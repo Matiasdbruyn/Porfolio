@@ -70,7 +70,7 @@ body {
           #mainhe #menu ul li a:hover {
             color: #363636; }
       #mainhe #menu ul div {
-        margin-top: 150px;
+        margin-top: 80px;
         display: flex;
         justify-content: space-evenly; }
         #mainhe #menu ul div a #git {
@@ -281,7 +281,7 @@ body {
           text-align: center;
           width: 80%;
           font-family: "Poppins", sans-serif; }
-        #menu #Jobs #parte1 #pachux #pachuxcont button {
+        #menu #Jobs #parte1 #pachux #pachuxcont #pachuxbo {
           font-family: "Poppins", sans-serif;
           font-weight: 500;
           font-size: 15px;
@@ -310,7 +310,7 @@ body {
           text-align: center;
           width: 80%;
           font-family: "Poppins", sans-serif; }
-        #menu #Jobs #parte1 #arquiaires #arquicont button {
+        #menu #Jobs #parte1 #arquiaires #arquicont #arquibo {
           font-family: "Poppins", sans-serif;
           font-weight: 500;
           font-size: 15px;
@@ -348,6 +348,22 @@ body {
     border-left: 3px solid red;
     font-size: 30px;
     width: 700px; }
+  #menu #AboutMe div #cv {
+    background-color: transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    width: 100px;
+    height: 25px;
+    border-radius: 15px;
+    border: solid 1px rgba(168, 2, 2, 0.904);
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 300px;
+    transition: 0.5s; }
+    #menu #AboutMe div #cv:hover {
+      background-color: rgba(168, 2, 2, 0.904);
+      color: white; }
   #menu #AboutMe img {
     width: 400px;
     height: 500px;
@@ -410,7 +426,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: mover 15s linear infinite; }
+  animation: mover 15s linear infinite;
+  /*15*/ }
 
 @keyframes mover {
   0% {
@@ -424,6 +441,7 @@ body {
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
       font-size: 80px;
+      /*80*/
       list-style: none;
       color: #363636;
       text-decoration: none;
@@ -433,7 +451,9 @@ body {
         filter: opacity(100%); }
   #footer .contacto img {
     width: 60px;
-    height: 50px; }
+    /*60*/
+    height: 50px;
+    /*50*/ }
 
 #footer .derechos {
   background-color: #d6d5d5; }
@@ -443,3 +463,66 @@ body {
     text-align: center;
     color: #363636;
     padding: 20px; }
+
+/*------MEDIAQUERY------*/
+@media screen and (max-width: 1210px) {
+  #menu #Principio {
+    height: 700px; }
+  #menu #Principio h1 {
+    font-size: 40px; }
+  #menu #Principio .izquierda {
+    font-size: 60px; }
+  #menu #Principio .derecha {
+    font-size: 60px; }
+  #menu #Principio h3 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 858px) {
+  #menu #Principio {
+    height: 700px; }
+  #menu #Principio h1 {
+    font-size: 40px; }
+  #menu #Principio .izquierda {
+    margin-right: 150px;
+    font-size: 50px; }
+  #menu #Principio .derecha {
+    margin-left: 150px;
+    font-size: 50px; }
+  #menu #Principio h3 {
+    font-size: 40px; } }
+
+@media screen and (max-width: 626px) {
+  #menu #Principio {
+    height: 700px; }
+  #menu #Principio h1 {
+    font-size: 40px; }
+  #menu #Principio .izquierda {
+    margin-right: 100px;
+    font-size: 40px; }
+  #menu #Principio .derecha {
+    margin-left: 100px;
+    font-size: 40px; }
+  #menu #Principio h3 {
+    font-size: 40px; }
+  #footer .derechos p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 746px) {
+  .mainTres .contenedor1 .habilidades img {
+    width: 100px;
+    height: 100px; }
+  .mainTres .contenedor2 .habilidades img {
+    width: 100px;
+    height: 100px; } }
+
+@media screen and (max-width: 506px) {
+  .mainTres .contenedor1 .habilidades img {
+    width: 80px;
+    height: 80px; }
+  .mainTres .contenedor2 .habilidades img {
+    width: 80px;
+    height: 80px; } }
+
+@media screen and (max-width: 490px) {
+  #footer h1 {
+    font-size: 30px; } }

@@ -7,6 +7,15 @@ window.addEventListener("focus", () => {
   document.title = previoustitle;
 });
 
+function mostrar1() {
+  document.getElementById(`AboutMe`).style.display = `none`;
+  document.getElementById(`Principio`).style.display = `grid`;
+  document.getElementById(`Education`).style.display = `none`;
+  document.getElementById(`Experience`).style.display = `none`;
+  document.getElementById(`Jobs`).style.display = `none`;
+  document.getElementById(`menu`).style.left = "-100%";
+  document.getElementById(`boton-menu`).style.display = "flex";
+}
 function mostrar() {
   document.getElementById(`AboutMe`).style.display = `flex`;
   document.getElementById(`Principio`).style.display = `none`;
@@ -47,12 +56,6 @@ function mostrar5() {
   document.getElementById(`menu`).style.left = "-100%";
   document.getElementById(`boton-menu`).style.display = "flex";
 }
-/*
-function ocultar() {
-  document.getElementById(
-    `AboutMe``Education``Experience``Jobs`
-  ).style.display = `none`;
-} */
 
 function Traba2() {
   document.getElementById(`trabajo2p`).style.display = `flex`;
@@ -61,32 +64,6 @@ function Traba3() {
   document.getElementById(`trabajo3p`).style.display = `flex`;
 }
 
-/*
-const el = document.getElementById("poster");
-const height = el.clientHeight;
-const width = el.clientWidth;
-
-el.addEventListener("mousemove", (evt) => {
-  const { layerX, layerY } = evt;
-  const yRotation = ((layerX - width / 2) / width) * 20;
-  const xRotation = ((layerY - height / 2) / height) * 20;
-  const string = `
-  perspective(500px)
-  scale (1.1)
-  rotateX(${xRotation}deg)
-  rotateY(${yRotation}deg)`;
-
-  el.estilos.transform = string;
-});
-
-el.addEventListener("mousemove", (evt) => {
-  el.estlos.transform = `
-perspective(500px)
-scale (1)
-rotateX(0)
-rotateY(0)`;
-});
-*/
 var botonMenu = document.getElementById("boton-menu");
 var menu = document.getElementById("menu");
 var salirmenu = document.getElementById("salirmenu");
@@ -106,21 +83,20 @@ document
     event.preventDefault();
   });
 
-/*
-for (var i = 0; i < apartados.length; i++) {
-  var apartado = document.getElementById(apartados[i]);
-  apartado.addEventListener("click", function () {
-    menu.style.display = "none";
-    botonMenu.style.display = "block";
-  });
-}
-*/
-function pachux() {
-  window.open("https://matiasdbruyn.github.io/Pachux/");
-}
-function arquiaires() {
-  window.open("https://matiasdbruyn.github.io/ArquiAires/");
-}
+document.getElementById("pachuxbo").addEventListener("click", function () {
+  window.open("https://matiasdbruyn.github.io/Pachux/", "_blank");
+});
+
+document.getElementById("arquibo").addEventListener("click", function () {
+  window.open("https://matiasdbruyn.github.io/ArquiAires/", "_blank");
+});
+
+document.getElementById("cv").addEventListener("click", function () {
+  window.open(
+    "file:///C:/Users/matut/Desktop/CV-Matias-De-Bruyn.html",
+    "_blank"
+  );
+});
 
 var pachux = document.getElementById("pachux");
 pachux.addEventListener("mouseover", function () {

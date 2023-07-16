@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: mover 15s linear infinite;
+    animation: mover 15s linear infinite; /*15*/
     @keyframes mover {
       0% {
         transform: translateX(135%);
@@ -27,7 +27,7 @@
       a {
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
-        font-size: 80px;
+        font-size: 80px; /*80*/
         list-style: none;
         color: rgb(54, 54, 54);
         text-decoration: none;
@@ -39,8 +39,8 @@
       }
     }
     img {
-      width: 60px;
-      height: 50px;
+      width: 60px; /*60*/
+      height: 50px; /*50*/
     }
   }
   .derechos {
