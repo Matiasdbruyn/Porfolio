@@ -426,7 +426,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: mover 15s linear infinite;
+  animation: mover 0s linear infinite;
   /*15*/ }
 
 @keyframes mover {
@@ -440,7 +440,7 @@ body {
     #footer .contacto h1 a {
       font-family: "Montserrat", sans-serif;
       font-weight: 500;
-      font-size: 80px;
+      font-size: 2px;
       /*80*/
       list-style: none;
       color: #363636;
@@ -450,9 +450,9 @@ body {
       #footer .contacto h1 a:hover {
         filter: opacity(100%); }
   #footer .contacto img {
-    width: 60px;
+    width: 6px;
     /*60*/
-    height: 50px;
+    height: 5px;
     /*50*/ }
 
 #footer .derechos {
@@ -465,6 +465,16 @@ body {
     padding: 20px; }
 
 /*------MEDIAQUERY------*/
+@media screen and (max-width: 1360px) {
+  .main #mainhe #menu ul li a {
+    font-size: 25px; }
+  .main #mainhe #menu ul div a #git {
+    width: 70px;
+    height: 70px; }
+  .main #mainhe #menu ul div a #linkedin {
+    width: 70px;
+    height: 70px; } }
+
 @media screen and (max-width: 1210px) {
   #menu #Principio {
     height: 700px; }
@@ -487,7 +497,16 @@ body {
     100% {
       margin-left: 100px; } }
   #menu #Principio h3 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  #footer .derechos p {
+    font-size: 10px; } }
+
+@media screen and (max-width: 962px) {
+  .main #mainhe #menu {
+    width: 38%; }
+  .main #mainhe #menu #salirmenu img {
+    width: 15px;
+    height: 15px; } }
 
 @media screen and (max-width: 858px) {
   #menu #Principio {
@@ -519,18 +538,23 @@ body {
   #footer .derechos p {
     font-size: 15px; } }
 
+@media screen and (max-width: 758px) {
+  #footer .contacto h1 a {
+    font-size: 20px;
+    margin-bottom: 50px; }
+  #footer .contacto h1 {
+    margin-bottom: 10px; }
+  #footer .contacto img {
+    width: 40px;
+    height: 30px; } }
+
 @media screen and (max-width: 746px) {
   .mainTres .contenedor1 .habilidades img {
     width: 100px;
     height: 100px; }
   .mainTres .contenedor2 .habilidades img {
     width: 100px;
-    height: 100px; }
-  #footer .contacto h1 a {
-    font-size: 50px; }
-  #footer .contacto img {
-    width: 40px;
-    height: 30px; } }
+    height: 100px; } }
 
 @media screen and (max-width: 506px) {
   .mainTres .contenedor1 .habilidades img {
