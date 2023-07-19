@@ -163,12 +163,6 @@ body {
         }
       }
     }
-    h3 {
-      padding: 50px;
-      font-family: "Montserrat", sans-serif;
-      text-align: center;
-      font-size: 70px;
-    }
   }
   #Education {
     height: 800px;
@@ -305,7 +299,7 @@ body {
         background-image: url(../img/cafe.jpg);
         background-size: cover;
         background-position: center;
-        width: 700px;
+        width: 650px;
         height: 400px;
         transition-duration: 1s;
         &:hover {
@@ -340,7 +334,7 @@ body {
         background-image: url(../img/edificios.jpg);
         background-size: cover;
         background-position: center;
-        width: 700px;
+        width: 650px;
         height: 400px;
         transition-duration: 1s;
         &:hover {
@@ -375,7 +369,7 @@ body {
   }
   #AboutMe {
     display: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 800px;
     div {

@@ -93,7 +93,7 @@ document.getElementById("arquibo").addEventListener("click", function () {
 
 document.getElementById("cv").addEventListener("click", function () {
   window.open(
-    "file:///C:/Users/matut/Desktop/CV-Matias-De-Bruyn.html",
+    "file:///C:/Users/matut/Desktop/CV%20Matias%20De%20Bruyn.pdf",
     "_blank"
   );
 });
