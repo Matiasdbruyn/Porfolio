@@ -93,6 +93,13 @@
   }
 }
 @media screen and (max-width: 1146px) {
+  .mainTres .carrusel span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px);
+  }
+  .mainTres .carrusel span img {
+    width: 100px;
+    height: 100px;
+  }
   .main #menu #Education {
     display: none;
     flex-direction: column;
@@ -153,6 +160,13 @@
   }
 }
 @media screen and (max-width: 634px) {
+  .mainTres .carrusel span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(150px);
+  }
+  .mainTres .carrusel span img {
+    width: 50px;
+    height: 50px;
+  }
   .main #menu #Experience .divtraba #trabajo2 a {
     font-size: 15px;
   }
@@ -207,6 +221,12 @@
   .main #menu #Education .dere div p {
     width: 250px;
   }
+  .main #mainhe #boton-menu {
+    left: 25px;
+  }
+  .main #mainhe #menu {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 758px) {
   #footer .contacto h1 a {
@@ -222,6 +242,10 @@
   }
 }
 @media screen and (max-width: 746px) {
+  .main #mainhe #menu ul li a {
+    font-size: 20px;
+    -webkit-text-stroke-width: 0.5px;
+  }
   .main #menu #Jobs #parte1 #pachux {
     width: 500px;
     height: 300px;
@@ -229,14 +253,6 @@
   .main #menu #Jobs #parte1 #arquiaires {
     width: 500px;
     height: 300px;
-  }
-  .mainTres .contenedor1 .habilidades img {
-    width: 100px;
-    height: 100px;
-  }
-  .mainTres .contenedor2 .habilidades img {
-    width: 100px;
-    height: 100px;
   }
 }
 @media screen and (max-width: 506px) {
@@ -247,20 +263,22 @@
     width: 25px;
     height: 25px;
   }
-  .mainTres .contenedor1 .habilidades img {
-    width: 80px;
-    height: 80px;
-  }
-  .mainTres .contenedor2 .habilidades img {
-    width: 80px;
-    height: 80px;
-  }
   #footer .derechos p {
     font-size: 10px;
   }
 }
 @media screen and (max-width: 490px) {
+  .mainTres .carrusel span {
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(100px);
+  }
+  .mainTres .carrusel span img {
+    width: 50px;
+    height: 50px;
+  }
   #footer h1 {
     font-size: 30px;
+  }
+  .main #mainhe #menu {
+    width: 60%;
   }
 }
