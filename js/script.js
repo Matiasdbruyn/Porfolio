@@ -91,13 +91,6 @@ document.getElementById("arquibo").addEventListener("click", function () {
   window.open("https://matiasdbruyn.github.io/ArquiAires/", "_blank");
 });
 
-document.getElementById("cv").addEventListener("click", function () {
-  window.open(
-    "file:///C:/Users/matut/Desktop/CV%20Matias%20De%20Bruyn.pdf",
-    "_blank"
-  );
-});
-
 var pachux = document.getElementById("pachux");
 pachux.addEventListener("mouseover", function () {
   document.getElementById("pachuxcont").style.display = "flex";

@@ -42,17 +42,19 @@ body {
       height: 25px; }
   #mainhe #menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 50px;
-    background-color: white;
+    background-color: rgba(214, 213, 213, 0.788);
     position: fixed;
     top: 0;
     left: -100%;
-    width: 30%;
+    width: 100%;
     height: 100vh;
     transition: 1s ease-out; }
     #mainhe #menu ul {
-      list-style: none; }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly; }
       #mainhe #menu ul li {
         display: grid;
         margin-top: 100px; }
@@ -61,7 +63,6 @@ body {
           font-family: "Poppins", sans-serif;
           text-decoration: none;
           color: transparent;
-          border-right: solid 2px red;
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: #363636;
           font-size: 45px;
@@ -75,17 +76,16 @@ body {
         justify-content: space-evenly; }
         #mainhe #menu ul div a #git {
           padding: 10px;
-          width: 80px;
-          height: 80px;
-          transition: 0.25s;
-          border-radius: 50px; }
+          width: 100px;
+          height: 100px;
+          transition: 0.25s; }
           #mainhe #menu ul div a #git:hover {
             transform: scale(1.1);
             animation: contact 0.4s linear; }
         #mainhe #menu ul div a #linkedin {
           padding: 10px;
-          width: 80px;
-          height: 80px;
+          width: 100px;
+          height: 100px;
           transition: 0.25s; }
           #mainhe #menu ul div a #linkedin:hover {
             transform: scale(1.1);
@@ -114,8 +114,7 @@ body {
   #menu #Principio h1 {
     font-family: "Montserrat", sans-serif;
     text-align: center;
-    font-size: 70px;
-    padding-bottom: 10px; }
+    font-size: 70px; }
   #menu #Principio .izquierda {
     margin-right: 300px;
     font-family: "Poppins", sans-serif;
@@ -211,9 +210,7 @@ body {
       font-family: "Poppins", sans-serif;
       font-size: 40px;
       font-weight: 600;
-      color: transparent;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #363636; }
+      color: #3b1c1c; }
     #menu #Experience .divtraba #trabajo3 a {
       font-family: "Poppins", sans-serif;
       color: #363636;
@@ -233,9 +230,7 @@ body {
       font-family: "Poppins", sans-serif;
       font-size: 40px;
       font-weight: 600;
-      color: transparent;
-      -webkit-text-stroke-width: 1px;
-      -webkit-text-stroke-color: #363636; }
+      color: #3b1c1c; }
 
 #menu #Jobs {
   display: none;
@@ -261,20 +256,21 @@ body {
       width: 650px;
       height: 400px;
       transition-duration: 1s; }
-      #menu #Jobs #parte1 #pachux:hover {
-        background: rgba(255, 0, 0, 0.39); }
       #menu #Jobs #parte1 #pachux #pachuxcont {
         display: none;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 100%; }
+        height: 100%;
+        background: rgba(255, 0, 0, 0.39); }
         #menu #Jobs #parte1 #pachux #pachuxcont h1 {
-          font-size: 30px; }
+          font-size: 30px;
+          color: white; }
         #menu #Jobs #parte1 #pachux #pachuxcont p {
           text-align: center;
           width: 80%;
-          font-family: "Poppins", sans-serif; }
+          font-family: "Poppins", sans-serif;
+          color: white; }
         #menu #Jobs #parte1 #pachux #pachuxcont #pachuxbo {
           font-family: "Poppins", sans-serif;
           font-weight: 500;
@@ -282,7 +278,9 @@ body {
           width: 80px;
           border-radius: 15px;
           border: none;
-          cursor: pointer; }
+          cursor: pointer;
+          background-color: black;
+          color: white; }
     #menu #Jobs #parte1 #arquiaires {
       background-image: url(../img/edificios.jpg);
       background-size: cover;
@@ -290,20 +288,21 @@ body {
       width: 650px;
       height: 400px;
       transition-duration: 1s; }
-      #menu #Jobs #parte1 #arquiaires:hover {
-        background: rgba(255, 0, 0, 0.514); }
       #menu #Jobs #parte1 #arquiaires #arquicont {
         display: none;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        height: 100%; }
+        height: 100%;
+        background: rgba(255, 0, 0, 0.39); }
         #menu #Jobs #parte1 #arquiaires #arquicont h1 {
-          font-size: 30px; }
+          font-size: 30px;
+          color: white; }
         #menu #Jobs #parte1 #arquiaires #arquicont p {
           text-align: center;
           width: 80%;
-          font-family: "Poppins", sans-serif; }
+          font-family: "Poppins", sans-serif;
+          color: white; }
         #menu #Jobs #parte1 #arquiaires #arquicont #arquibo {
           font-family: "Poppins", sans-serif;
           font-weight: 500;
@@ -311,7 +310,9 @@ body {
           width: 80px;
           border-radius: 15px;
           border: none;
-          cursor: pointer; }
+          cursor: pointer;
+          background-color: black;
+          color: white; }
 
 #menu #AboutMe {
   display: none;
@@ -342,22 +343,6 @@ body {
     border-left: 3px solid red;
     font-size: 30px;
     width: 700px; }
-  #menu #AboutMe div #cv {
-    background-color: transparent;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    width: 100px;
-    height: 25px;
-    border: solid 1px rgba(168, 2, 2, 0.904);
-    cursor: pointer;
-    margin-top: 20px;
-    margin-left: 300px;
-    transition: 0.5s; }
-    #menu #AboutMe div #cv:hover {
-      background-color: rgba(168, 2, 2, 0.904);
-      box-shadow: 0px 15px 20px rgba(168, 2, 2, 0.904);
-      color: white; }
   #menu #AboutMe img {
     width: 400px;
     height: 500px;
@@ -481,8 +466,6 @@ body {
   #menu #AboutMe div h3 {
     font-size: 23px;
     width: 500px; }
-  #menu #AboutMe div #cv {
-    margin-left: 200px; }
   #menu #AboutMe img {
     width: 200px;
     height: 250px;
@@ -544,8 +527,6 @@ body {
     border-right: 2px solid red; } }
 
 @media screen and (max-width: 962px) {
-  .main #mainhe #menu {
-    width: 38%; }
   .main #mainhe #menu #salirmenu img {
     width: 15px;
     height: 15px; }
@@ -582,8 +563,8 @@ body {
   .mainTres .carrusel span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(150px); }
   .mainTres .carrusel span img {
-    width: 50px;
-    height: 50px; }
+    width: 80px;
+    height: 80px; }
   .main #menu #Experience .divtraba #trabajo2 a {
     font-size: 15px; }
   .main #menu #Experience .divtraba #trabajo2 a span {
@@ -623,9 +604,7 @@ body {
   .main #menu #Education .dere div p {
     width: 250px; }
   .main #mainhe #boton-menu {
-    left: 25px; }
-  .main #mainhe #menu {
-    width: 50%; } }
+    left: 25px; } }
 
 @media screen and (max-width: 758px) {
   #footer .contacto h1 a {
@@ -646,7 +625,44 @@ body {
     height: 300px; }
   .main #menu #Jobs #parte1 #arquiaires {
     width: 500px;
-    height: 300px; } }
+    height: 300px; }
+  .main #menu #Experience {
+    padding: 0px; }
+  .main #menu #Experience .divtraba {
+    padding: 0px; }
+  .main #menu #Experience .divtraba #trabajo3 #trabajo3p {
+    margin-left: 0px;
+    width: 80%; }
+  .main #menu #Experience .divtraba #trabajo2 #trabajo2p {
+    margin-left: 0px;
+    width: 80%; }
+  .main #menu #Experience .divtraba #trabajo2 a {
+    padding: 5px; }
+  .main #menu #Experience .divtraba #trabajo2 a span {
+    padding: 0px; }
+  .main #menu #Experience .divtraba #trabajo3 a {
+    padding: 5px; }
+  .main #menu #Experience .divtraba #trabajo3 a span {
+    padding: 0px; }
+  .main #menu #Experience .divtraba #trabajo2 {
+    margin-left: 10px; }
+  .main #menu #Experience .divtraba #trabajo3 {
+    margin-left: 10px; } }
+
+@media screen and (max-width: 526px) {
+  .main #menu #Jobs h1 {
+    padding: 0px;
+    font-size: 40px; }
+  .main #menu #Jobs #parte1 #pachux {
+    width: 400px;
+    height: 250px; }
+  .main #menu #Jobs #parte1 #pachux #pachuxcont p {
+    font-size: 12px; }
+  .main #menu #Jobs #parte1 #arquiaires {
+    width: 400px;
+    height: 250px; }
+  .main #menu #Jobs #parte1 #arquiaires #arquicont p {
+    font-size: 12px; } }
 
 @media screen and (max-width: 506px) {
   .main #mainhe #boton-menu {
@@ -664,6 +680,46 @@ body {
     width: 50px;
     height: 50px; }
   #footer h1 {
+    font-size: 30px; } }
+
+@media screen and (max-width: 467px) {
+  .main #menu #Education .izqui div p {
+    width: 150px;
+    font-size: 15px;
+    padding: none; }
+  .main #menu #Education .dere div p {
+    width: 150px;
+    font-size: 15px;
+    padding: none; }
+  .main #menu #Experience .divtraba #trabajo3 #trabajo3p {
+    font-size: 15px; }
+  .main #menu #Experience .divtraba #trabajo2 #trabajo2p {
+    font-size: 15px; } }
+
+@media screen and (max-width: 443px) {
+  .main #menu #AboutMe div h1 {
+    font-size: 25px; }
+  #menu #AboutMe div h2 {
+    font-size: 15px;
+    width: 300px; }
+  #menu #AboutMe div h3 {
+    font-size: 15px;
+    width: 300px; }
+  .main #menu #Jobs #parte1 #pachux {
+    width: 350px;
+    height: 250px; }
+  .main #menu #Jobs #parte1 #arquiaires {
+    width: 350px;
+    height: 250px; }
+  #menu #Principio .izquierda {
     font-size: 30px; }
-  .main #mainhe #menu {
-    width: 60%; } }
+  #menu #Principio .derecha {
+    font-size: 30px; } }
+
+@media screen and (max-width: 370px) {
+  .main #menu #Jobs #parte1 #pachux {
+    width: 300px;
+    height: 200px; }
+  .main #menu #Jobs #parte1 #arquiaires {
+    width: 300px;
+    height: 200px; } }
