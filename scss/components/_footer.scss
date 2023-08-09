@@ -8,39 +8,34 @@
     padding: 30px;
     text-decoration: overline;
   }
-  .contacto {
+  #contacto {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: mover 15s linear infinite;
-    @keyframes mover {
-      0% {
-        transform: translateX(135%);
-      }
-      100% {
-        transform: translateX(-135%);
-      }
+    height: 100px;
+    img {
+      width: 70px;
+      height: 80px;
     }
-    h1 {
-      text-decoration: none;
-      color: rgba(54, 54, 54, 0.068);
-      a {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 80px;
-        list-style: none;
-        color: rgb(54, 54, 54);
+    #h1contacto {
+      display: none;
+      h1 {
         text-decoration: none;
-        filter: opacity(30%);
-        transition-duration: 1s;
-        &:hover {
-          filter: opacity(100%);
+        color: rgba(54, 54, 54, 0.068);
+        a {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          font-size: 35px;
+          list-style: none;
+          color: rgb(54, 54, 54);
+          text-decoration: none;
+          filter: opacity(30%);
+          transition-duration: 1s;
+          &:hover {
+            filter: opacity(100%);
+          }
         }
       }
-    }
-    img {
-      width: 60px;
-      height: 50px;
     }
   }
   .derechos {

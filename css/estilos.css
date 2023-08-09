@@ -366,8 +366,8 @@ body {
     color: #363636; }
   .mainTres .carrusel {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     transform-style: preserve-3d;
     animation: rotacion 20s linear infinite; }
 
@@ -405,34 +405,30 @@ body {
   padding: 30px;
   text-decoration: overline; }
 
-#footer .contacto {
+#footer #contacto {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: mover 15s linear infinite; }
-
-@keyframes mover {
-  0% {
-    transform: translateX(135%); }
-  100% {
-    transform: translateX(-135%); } }
-  #footer .contacto h1 {
-    text-decoration: none;
-    color: rgba(54, 54, 54, 0.068); }
-    #footer .contacto h1 a {
-      font-family: "Montserrat", sans-serif;
-      font-weight: 500;
-      font-size: 80px;
-      list-style: none;
-      color: #363636;
+  height: 100px; }
+  #footer #contacto img {
+    width: 70px;
+    height: 80px; }
+  #footer #contacto #h1contacto {
+    display: none; }
+    #footer #contacto #h1contacto h1 {
       text-decoration: none;
-      filter: opacity(30%);
-      transition-duration: 1s; }
-      #footer .contacto h1 a:hover {
-        filter: opacity(100%); }
-  #footer .contacto img {
-    width: 60px;
-    height: 50px; }
+      color: rgba(54, 54, 54, 0.068); }
+      #footer #contacto #h1contacto h1 a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        font-size: 35px;
+        list-style: none;
+        color: #363636;
+        text-decoration: none;
+        filter: opacity(30%);
+        transition-duration: 1s; }
+        #footer #contacto #h1contacto h1 a:hover {
+          filter: opacity(100%); }
 
 #footer .derechos {
   background-color: #d6d5d5; }
@@ -454,6 +450,11 @@ body {
     margin-bottom: 50px; } }
 
 @media screen and (max-width: 1360px) {
+  #footer #contacto img {
+    width: 60px;
+    height: 70px; }
+  #footer #contacto #h1contacto h1 a {
+    font-size: 25px; }
   #menu #AboutMe div h1 {
     writing-mode: horizontal-tb;
     transform: rotate(-360deg);
@@ -512,6 +513,8 @@ body {
     font-size: 40px; } }
 
 @media screen and (max-width: 1146px) {
+  #footer h1 {
+    padding: 10px; }
   .mainTres .carrusel span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(250px); }
   .mainTres .carrusel span img {
@@ -527,6 +530,11 @@ body {
     border-right: 2px solid red; } }
 
 @media screen and (max-width: 962px) {
+  #footer #contacto img {
+    width: 40px;
+    height: 50px; }
+  #footer #contacto #h1contacto h1 a {
+    font-size: 18px; }
   .main #mainhe #menu #salirmenu img {
     width: 15px;
     height: 15px; }
@@ -617,6 +625,12 @@ body {
     height: 30px; } }
 
 @media screen and (max-width: 746px) {
+  #footer #contacto img {
+    margin-top: 20px;
+    width: 30px;
+    height: 40px; }
+  #footer #contacto #h1contacto h1 a {
+    font-size: 13px; }
   .main #mainhe #menu ul li a {
     font-size: 20px;
     -webkit-text-stroke-width: 0.5px; }
@@ -664,6 +678,14 @@ body {
   .main #menu #Jobs #parte1 #arquiaires #arquicont p {
     font-size: 12px; } }
 
+@media screen and (max-width: 551px) {
+  #footer #contacto img {
+    margin-top: 20px;
+    width: 20px;
+    height: 30px; }
+  #footer #contacto #h1contacto h1 a {
+    font-size: 10px; } }
+
 @media screen and (max-width: 506px) {
   .main #mainhe #boton-menu {
     font-size: 18px; }
@@ -677,8 +699,8 @@ body {
   .mainTres .carrusel span {
     transform: rotateY(calc(var(--i) * 45deg)) translateZ(100px); }
   .mainTres .carrusel span img {
-    width: 50px;
-    height: 50px; }
+    width: 70px;
+    height: 70px; }
   #footer h1 {
     font-size: 30px; } }
 
@@ -697,6 +719,12 @@ body {
     font-size: 15px; } }
 
 @media screen and (max-width: 443px) {
+  #footer #contacto img {
+    margin-top: 15px;
+    width: 15px;
+    height: 20px; }
+  #footer #contacto #h1contacto h1 a {
+    font-size: 8px; }
   .main #menu #AboutMe div h1 {
     font-size: 25px; }
   #menu #AboutMe div h2 {

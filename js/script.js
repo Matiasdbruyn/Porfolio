@@ -108,3 +108,12 @@ arquiaires.addEventListener("mouseover", function () {
 arquiaires.addEventListener("mouseout", function () {
   document.getElementById("arquicont").style.display = "none";
 });
+
+var contacto = document.getElementById("contacto");
+contacto.addEventListener("mouseover", function () {
+  document.getElementById("h1contacto").style.display = "flex";
+});
+
+contacto.addEventListener("mouseout", function () {
+  document.getElementById("h1contacto").style.display = "none";
+});
