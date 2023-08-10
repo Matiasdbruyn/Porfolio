@@ -44,7 +44,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
-    background-color: rgba(214, 213, 213, 0.788);
+    background-color: rgba(214, 213, 213, 0.877);
     position: fixed;
     top: 0;
     left: -100%;
@@ -62,7 +62,7 @@ body {
           padding-right: 50px;
           font-family: "Poppins", sans-serif;
           text-decoration: none;
-          color: transparent;
+          color: rgba(54, 54, 54, 0.459);
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: #363636;
           font-size: 45px;
@@ -103,8 +103,8 @@ body {
     #mainhe #menu #salirmenu {
       transition: 1s ease-in-out; }
       #mainhe #menu #salirmenu img {
-        width: 25px;
-        height: 25px; }
+        width: 35px;
+        height: 35px; }
 
 #menu #Principio {
   height: 1000px;
@@ -473,15 +473,7 @@ body {
     filter: blur(1px);
     transition: transform 1s ease; }
     #menu #AboutMe img:hover {
-      filter: blur(0px); }
-  .main #mainhe #menu ul li a {
-    font-size: 25px; }
-  .main #mainhe #menu ul div a #git {
-    width: 70px;
-    height: 70px; }
-  .main #mainhe #menu ul div a #linkedin {
-    width: 70px;
-    height: 70px; } }
+      filter: blur(0px); } }
 
 @media screen and (max-width: 1210px) {
   #menu #AboutMe {
@@ -531,9 +523,11 @@ body {
 
 @media screen and (max-width: 962px) {
   #footer #contacto img {
+    margin-top: 15px;
     width: 40px;
     height: 50px; }
   #footer #contacto #h1contacto h1 a {
+    filter: opacity(100%);
     font-size: 18px; }
   .main #mainhe #menu #salirmenu img {
     width: 15px;
@@ -630,9 +624,9 @@ body {
     width: 30px;
     height: 40px; }
   #footer #contacto #h1contacto h1 a {
-    font-size: 13px; }
+    font-size: 15px; }
   .main #mainhe #menu ul li a {
-    font-size: 20px;
+    font-size: 35px;
     -webkit-text-stroke-width: 0.5px; }
   .main #menu #Jobs #parte1 #pachux {
     width: 500px;
