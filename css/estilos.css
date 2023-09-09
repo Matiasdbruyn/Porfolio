@@ -8,10 +8,8 @@ html {
   scroll-behavior: smooth; }
 
 /*---------INDEX-----------*/
-body {
-  background-color: #d6d5d5; }
-
 .main {
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -25,11 +23,11 @@ body {
   top: 0;
   z-index: 1; }
   #mainhe #boton-menu {
+    color: white;
     position: absolute;
     top: 30px;
     left: 50px;
     font-family: "Poppins", sans-serif;
-    color: #363636;
     font-size: 25px;
     text-decoration: none;
     display: flex;
@@ -37,14 +35,11 @@ body {
     transition-duration: 1s; }
     #mainhe #boton-menu:hover {
       color: red; }
-    #mainhe #boton-menu img {
-      width: 25px;
-      height: 25px; }
   #mainhe #menu {
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
-    background-color: rgba(214, 213, 213, 0.877);
+    background-color: rgba(214, 213, 213, 0.911);
     position: fixed;
     top: 0;
     left: -100%;
@@ -107,15 +102,22 @@ body {
         height: 35px; }
 
 #menu #Principio {
+  background-color: black;
   height: 1000px;
   display: grid;
   justify-content: center;
-  align-items: center; }
-  #menu #Principio h1 {
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    font-size: 70px; }
+  align-items: center;
+  animation: 3s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both; }
+
+@keyframes circle-in-hesitate {
+  0% {
+    clip-path: circle(0%); }
+  40% {
+    clip-path: circle(40%); }
+  100% {
+    clip-path: circle(125%); } }
   #menu #Principio .izquierda {
+    color: white;
     margin-right: 300px;
     font-family: "Poppins", sans-serif;
     font-weight: 800;
@@ -129,6 +131,7 @@ body {
   100% {
     margin-right: 300px; } }
   #menu #Principio .derecha {
+    color: white;
     margin-left: 300px;
     font-family: "Poppins", sans-serif;
     font-weight: 800;
@@ -143,10 +146,20 @@ body {
     margin-left: 300px; } }
 
 #menu #Education {
+  background-color: black;
   height: 800px;
   display: none;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  animation: 3s cubic-bezier(0.25, 1, 0.3, 1) square-in-hesitate both; }
+
+@keyframes square-in-hesitate {
+  0% {
+    clip-path: inset(100% 100% 100% 100%); }
+  40% {
+    clip-path: inset(33% 33% 33% 33%); }
+  100% {
+    clip-path: inset(0 0 0 0); } }
   #menu #Education .izqui {
     display: flex;
     flex-direction: column;
@@ -159,6 +172,7 @@ body {
         width: 70px;
         height: 70px; }
       #menu #Education .izqui div p {
+        color: white;
         font-family: "Montserrat", sans-serif;
         font-size: 20px;
         width: 350px;
@@ -175,17 +189,26 @@ body {
         width: 70px;
         height: 70px; }
       #menu #Education .dere div p {
+        color: white;
         font-family: "Montserrat", sans-serif;
         font-size: 20px;
         width: 350px;
         margin-left: 20px; }
 
 #menu #Experience {
+  background-color: black;
   display: none;
   justify-content: flex-start;
   align-items: center;
   height: 800px;
-  padding: 50px; }
+  padding: 50px;
+  animation: 3s cubic-bezier(0.25, 1, 0.3, 1) square-in-center both; }
+
+@keyframes square-in-center {
+  from {
+    clip-path: inset(100% 100% 100% 100%); }
+  to {
+    clip-path: inset(0 0 0 0); } }
   #menu #Experience .divtraba {
     display: flex;
     flex-direction: column;
@@ -193,7 +216,7 @@ body {
     padding: 50px; }
     #menu #Experience .divtraba #trabajo2 a {
       font-family: "Poppins", sans-serif;
-      color: #363636;
+      color: white;
       font-size: 30px;
       font-weight: 500;
       text-decoration: none; }
@@ -210,10 +233,10 @@ body {
       font-family: "Poppins", sans-serif;
       font-size: 40px;
       font-weight: 600;
-      color: #3b1c1c; }
+      color: #531f1f; }
     #menu #Experience .divtraba #trabajo3 a {
       font-family: "Poppins", sans-serif;
-      color: #363636;
+      color: white;
       font-size: 30px;
       font-weight: 500;
       text-decoration: none; }
@@ -230,21 +253,29 @@ body {
       font-family: "Poppins", sans-serif;
       font-size: 40px;
       font-weight: 600;
-      color: #3b1c1c; }
+      color: #531f1f; }
 
 #menu #Jobs {
+  background-color: black;
   display: none;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  height: 1000px; }
+  height: 1000px;
+  animation: 3s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-bottom-left both; }
+
+@keyframes wipe-in-bottom-left {
+  from {
+    clip-path: polygon(50% -50%, 150% 50%, 150% 50%, 50% -50%); }
+  to {
+    clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%); } }
   #menu #Jobs h1 {
     text-align: center;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     font-size: 70px;
     font-weight: 600;
-    color: #363636; }
+    color: white; }
   #menu #Jobs #parte1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -254,15 +285,22 @@ body {
       background-size: cover;
       background-position: center;
       width: 650px;
-      height: 400px;
-      transition-duration: 1s; }
+      height: 400px; }
       #menu #Jobs #parte1 #pachux #pachuxcont {
         display: none;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         height: 100%;
-        background: rgba(255, 0, 0, 0.39); }
+        background: rgba(255, 0, 0, 0.39);
+        border: 2px solid white;
+        animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) diamond-in-center both; }
+
+@keyframes diamond-in-center {
+  from {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); }
+  to {
+    clip-path: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%); } }
         #menu #Jobs #parte1 #pachux #pachuxcont h1 {
           font-size: 30px;
           color: white; }
@@ -276,7 +314,7 @@ body {
           font-weight: 500;
           font-size: 15px;
           width: 80px;
-          border-radius: 15px;
+          border-radius: 10px;
           border: none;
           cursor: pointer;
           background-color: black;
@@ -286,15 +324,22 @@ body {
       background-size: cover;
       background-position: center;
       width: 650px;
-      height: 400px;
-      transition-duration: 1s; }
+      height: 400px; }
       #menu #Jobs #parte1 #arquiaires #arquicont {
         display: none;
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
         height: 100%;
-        background: rgba(255, 0, 0, 0.39); }
+        background: rgba(255, 0, 0, 0.39);
+        border: 2px solid white;
+        animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) diamond-in-center both; }
+
+@keyframes diamond-in-center {
+  from {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); }
+  to {
+    clip-path: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%); } }
         #menu #Jobs #parte1 #arquiaires #arquicont h1 {
           font-size: 30px;
           color: white; }
@@ -308,19 +353,27 @@ body {
           font-weight: 500;
           font-size: 15px;
           width: 80px;
-          border-radius: 15px;
+          border-radius: 10px;
           border: none;
           cursor: pointer;
           background-color: black;
           color: white; }
 
 #menu #AboutMe {
+  background-color: black;
   display: none;
   justify-content: space-evenly;
   align-items: center;
-  height: 800px; }
+  height: 800px;
+  animation: 3s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both; }
+
+@keyframes wipe-in-right {
+  from {
+    clip-path: inset(0 100% 0 0); }
+  to {
+    clip-path: inset(0 0 0 0); } }
   #menu #AboutMe div h1 {
-    color: #363636;
+    color: white;
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     font-family: "Montserrat", sans-serif;
@@ -328,7 +381,7 @@ body {
     text-align: left;
     padding: 20px; }
   #menu #AboutMe div h2 {
-    color: #363636;
+    color: white;
     border-left: 3px solid red;
     font-family: "Montserrat", sans-serif;
     font-size: 27px;
@@ -336,7 +389,7 @@ body {
     padding: 20px;
     width: 700px; }
   #menu #AboutMe div h3 {
-    color: #363636;
+    color: white;
     padding: 20px;
     font-family: "Montserrat", sans-serif;
     text-align: left;
@@ -346,11 +399,9 @@ body {
   #menu #AboutMe img {
     width: 400px;
     height: 500px;
-    filter: blur(1px);
     transition: transform 1s ease; }
     #menu #AboutMe img:hover {
-      transform: scale(1.1);
-      filter: blur(0px); }
+      transform: scale(1.1); }
 
 .mainTres {
   display: flex;
@@ -392,7 +443,7 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: 1.5s; }
+        transition: 1s; }
         .mainTres .carrusel span img:hover {
           transform: translateY(-50px) scale(1.2); }
 
@@ -409,35 +460,58 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px; }
-  #footer #contacto img {
-    width: 70px;
-    height: 80px; }
-  #footer #contacto #h1contacto {
-    display: none; }
-    #footer #contacto #h1contacto h1 {
-      text-decoration: none;
-      color: rgba(54, 54, 54, 0.068); }
-      #footer #contacto #h1contacto h1 a {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
-        font-size: 35px;
-        list-style: none;
-        color: #363636;
-        text-decoration: none;
-        filter: opacity(30%);
-        transition-duration: 1s; }
-        #footer #contacto #h1contacto h1 a:hover {
-          filter: opacity(100%); }
+  height: 200px; }
+  #footer #contacto #redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%; }
+  #footer #contacto #presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: 1s cubic-bezier(0.25, 1, 0.3, 1) square-in-center both; }
 
-#footer .derechos {
-  background-color: #d6d5d5; }
-  #footer .derechos p {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    text-align: center;
-    color: #363636;
-    padding: 20px; }
+@keyframes square-in-center {
+  from {
+    clip-path: inset(100% 100% 100% 100%); }
+  to {
+    clip-path: inset(0 0 0 0); } }
+    #footer #contacto #presentacion .titulo {
+      text-decoration: none;
+      padding: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 45px; }
+    #footer #contacto #presentacion p {
+      margin-bottom: 15px;
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px; }
+  #footer #contacto #datos {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: solid 1px black;
+    animation: 2s cubic-bezier(0.25, 1, 0.3, 1) circle-in-center both; }
+
+@keyframes circle-in-center {
+  from {
+    clip-path: circle(0%); }
+  to {
+    clip-path: circle(125%); } }
+    #footer #contacto #datos img {
+      width: 50px;
+      height: 50px; }
+
+.derechos p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color: #363636;
+  padding: 20px; }
 
 /*------MEDIAQUERY------*/
 @media screen and (max-width: 1420px) {
@@ -450,11 +524,6 @@ body {
     margin-bottom: 50px; } }
 
 @media screen and (max-width: 1360px) {
-  #footer #contacto img {
-    width: 60px;
-    height: 70px; }
-  #footer #contacto #h1contacto h1 a {
-    font-size: 25px; }
   #menu #AboutMe div h1 {
     writing-mode: horizontal-tb;
     transform: rotate(-360deg);
@@ -481,10 +550,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center; }
-  #menu #Principio {
-    height: 700px; }
-  #menu #Principio h1 {
-    font-size: 40px; }
   #menu #Principio .izquierda {
     font-size: 60px;
     animation: desplegarI 2s ease-in-out; }
@@ -500,9 +565,7 @@ body {
     0% {
       margin-left: 500px; }
     100% {
-      margin-left: 100px; } }
-  #menu #Principio h3 {
-    font-size: 40px; } }
+      margin-left: 100px; } } }
 
 @media screen and (max-width: 1146px) {
   #footer h1 {
@@ -522,13 +585,6 @@ body {
     border-right: 2px solid red; } }
 
 @media screen and (max-width: 962px) {
-  #footer #contacto img {
-    margin-top: 15px;
-    width: 40px;
-    height: 50px; }
-  #footer #contacto #h1contacto h1 a {
-    filter: opacity(100%);
-    font-size: 18px; }
   .main #mainhe #menu #salirmenu img {
     width: 15px;
     height: 15px; }
@@ -548,18 +604,12 @@ body {
     font-size: 20px; }
   .main #menu #Experience .divtraba #trabajo3 a span {
     font-size: 20px; }
-  #menu #Principio {
-    height: 700px; }
-  #menu #Principio h1 {
-    font-size: 40px; }
   #menu #Principio .izquierda {
     margin-right: 150px;
     font-size: 50px; }
   #menu #Principio .derecha {
     margin-left: 150px;
-    font-size: 50px; }
-  #menu #Principio h3 {
-    font-size: 40px; } }
+    font-size: 50px; } }
 
 @media screen and (max-width: 634px) {
   .mainTres .carrusel span {
@@ -587,17 +637,11 @@ body {
   #menu #AboutMe div h3 {
     font-size: 18px;
     width: 400px; }
-  #menu #Principio {
-    height: 700px; }
-  #menu #Principio h1 {
-    font-size: 40px; }
   #menu #Principio .izquierda {
     margin-right: 100px;
     font-size: 40px; }
   #menu #Principio .derecha {
     margin-left: 100px;
-    font-size: 40px; }
-  #menu #Principio h3 {
     font-size: 40px; }
   #footer .derechos p {
     font-size: 15px; }
@@ -608,23 +652,7 @@ body {
   .main #mainhe #boton-menu {
     left: 25px; } }
 
-@media screen and (max-width: 758px) {
-  #footer .contacto h1 a {
-    font-size: 22px;
-    margin-bottom: 50px; }
-  #footer .contacto h1 {
-    margin-bottom: 10px; }
-  #footer .contacto img {
-    width: 40px;
-    height: 30px; } }
-
 @media screen and (max-width: 746px) {
-  #footer #contacto img {
-    margin-top: 20px;
-    width: 30px;
-    height: 40px; }
-  #footer #contacto #h1contacto h1 a {
-    font-size: 15px; }
   .main #mainhe #menu ul li a {
     font-size: 35px;
     -webkit-text-stroke-width: 0.5px; }
@@ -672,20 +700,9 @@ body {
   .main #menu #Jobs #parte1 #arquiaires #arquicont p {
     font-size: 12px; } }
 
-@media screen and (max-width: 551px) {
-  #footer #contacto img {
-    margin-top: 20px;
-    width: 20px;
-    height: 30px; }
-  #footer #contacto #h1contacto h1 a {
-    font-size: 10px; } }
-
 @media screen and (max-width: 506px) {
   .main #mainhe #boton-menu {
     font-size: 18px; }
-  .main #mainhe #boton-menu img {
-    width: 25px;
-    height: 25px; }
   #footer .derechos p {
     font-size: 10px; } }
 
@@ -713,12 +730,6 @@ body {
     font-size: 15px; } }
 
 @media screen and (max-width: 443px) {
-  #footer #contacto img {
-    margin-top: 15px;
-    width: 15px;
-    height: 20px; }
-  #footer #contacto #h1contacto h1 a {
-    font-size: 8px; }
   .main #menu #AboutMe div h1 {
     font-size: 25px; }
   #menu #AboutMe div h2 {

@@ -1,8 +1,6 @@
 /*---------INDEX-----------*/
-body {
-  background-color: rgb(214, 213, 213);
-}
 .main {
+  background-color: black;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,11 +14,11 @@ body {
   top: 0;
   z-index: 1;
   #boton-menu {
+    color: white;
     position: absolute;
     top: 30px;
     left: 50px;
     font-family: "Poppins", sans-serif;
-    color: rgb(54, 54, 54);
     font-size: 25px;
     text-decoration: none;
     display: flex;
@@ -29,16 +27,12 @@ body {
     &:hover {
       color: red;
     }
-    img {
-      width: 25px;
-      height: 25px;
-    }
   }
   #menu {
     display: flex;
     justify-content: space-evenly;
     padding: 50px;
-    background-color: rgba(214, 213, 213, 0.877);
+    background-color: rgba(214, 213, 213, 0.911);
     position: fixed;
     top: 0;
     left: -100%;
@@ -120,16 +114,25 @@ body {
 }
 #menu {
   #Principio {
+    background-color: black;
     height: 1000px;
     display: grid;
     justify-content: center;
     align-items: center;
-    h1 {
-      font-family: "Montserrat", sans-serif;
-      text-align: center;
-      font-size: 70px;
+    animation: 3s cubic-bezier(0.25, 1, 0.3, 1) circle-in-hesitate both;
+    @keyframes circle-in-hesitate {
+      0% {
+        clip-path: circle(0%);
+      }
+      40% {
+        clip-path: circle(40%);
+      }
+      100% {
+        clip-path: circle(125%);
+      }
     }
     .izquierda {
+      color: white;
       margin-right: 300px;
       font-family: "Poppins", sans-serif;
       font-weight: 800;
@@ -146,6 +149,7 @@ body {
       }
     }
     .derecha {
+      color: white;
       margin-left: 300px;
       font-family: "Poppins", sans-serif;
       font-weight: 800;
@@ -163,10 +167,23 @@ body {
     }
   }
   #Education {
+    background-color: black;
     height: 800px;
     display: none;
     justify-content: space-around;
     align-items: center;
+    animation: 3s cubic-bezier(0.25, 1, 0.3, 1) square-in-hesitate both;
+    @keyframes square-in-hesitate {
+      0% {
+        clip-path: inset(100% 100% 100% 100%);
+      }
+      40% {
+        clip-path: inset(33% 33% 33% 33%);
+      }
+      100% {
+        clip-path: inset(0 0 0 0);
+      }
+    }
     .izqui {
       display: flex;
       flex-direction: column;
@@ -180,6 +197,7 @@ body {
           height: 70px;
         }
         p {
+          color: white;
           font-family: "Montserrat", sans-serif;
           font-size: 20px;
           width: 350px;
@@ -200,6 +218,7 @@ body {
           height: 70px;
         }
         p {
+          color: white;
           font-family: "Montserrat", sans-serif;
           font-size: 20px;
           width: 350px;
@@ -209,11 +228,21 @@ body {
     }
   }
   #Experience {
+    background-color: black;
     display: none;
     justify-content: flex-start;
     align-items: center;
     height: 800px;
     padding: 50px;
+    animation: 3s cubic-bezier(0.25, 1, 0.3, 1) square-in-center both;
+    @keyframes square-in-center {
+      from {
+        clip-path: inset(100% 100% 100% 100%);
+      }
+      to {
+        clip-path: inset(0 0 0 0);
+      }
+    }
     .divtraba {
       display: flex;
       flex-direction: column;
@@ -222,7 +251,7 @@ body {
       #trabajo2 {
         a {
           font-family: "Poppins", sans-serif;
-          color: rgb(54, 54, 54);
+          color: white;
           font-size: 30px;
           font-weight: 500;
           text-decoration: none;
@@ -241,13 +270,13 @@ body {
           font-family: "Poppins", sans-serif;
           font-size: 40px;
           font-weight: 600;
-          color: rgb(59, 28, 28);
+          color: rgb(83, 31, 31);
         }
       }
       #trabajo3 {
         a {
           font-family: "Poppins", sans-serif;
-          color: rgb(54, 54, 54);
+          color: white;
           font-size: 30px;
           font-weight: 500;
           text-decoration: none;
@@ -266,24 +295,34 @@ body {
           font-family: "Poppins", sans-serif;
           font-size: 40px;
           font-weight: 600;
-          color: rgb(59, 28, 28);
+          color: rgb(83, 31, 31);
         }
       }
     }
   }
   #Jobs {
+    background-color: black;
     display: none;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     height: 1000px;
+    animation: 3s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-bottom-left both;
+    @keyframes wipe-in-bottom-left {
+      from {
+        clip-path: polygon(50% -50%, 150% 50%, 150% 50%, 50% -50%);
+      }
+      to {
+        clip-path: polygon(50% -50%, 150% 50%, 50% 150%, -50% 50%);
+      }
+    }
     h1 {
       text-align: center;
       text-transform: uppercase;
       font-family: "Poppins", sans-serif;
       font-size: 70px;
       font-weight: 600;
-      color: rgb(54, 54, 54);
+      color: white;
     }
     #parte1 {
       display: grid;
@@ -295,7 +334,6 @@ body {
         background-position: center;
         width: 650px;
         height: 400px;
-        transition-duration: 1s;
         #pachuxcont {
           display: none;
           flex-direction: column;
@@ -303,6 +341,16 @@ body {
           align-items: center;
           height: 100%;
           background: rgba(255, 0, 0, 0.39);
+          border: 2px solid white;
+          animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) diamond-in-center both;
+          @keyframes diamond-in-center {
+            from {
+              clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+            }
+            to {
+              clip-path: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%);
+            }
+          }
           h1 {
             font-size: 30px;
             color: white;
@@ -318,7 +366,7 @@ body {
             font-weight: 500;
             font-size: 15px;
             width: 80px;
-            border-radius: 15px;
+            border-radius: 10px;
             border: none;
             cursor: pointer;
             background-color: black;
@@ -332,7 +380,6 @@ body {
         background-position: center;
         width: 650px;
         height: 400px;
-        transition-duration: 1s;
         #arquicont {
           display: none;
           flex-direction: column;
@@ -340,6 +387,16 @@ body {
           align-items: center;
           height: 100%;
           background: rgba(255, 0, 0, 0.39);
+          border: 2px solid white;
+          animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) diamond-in-center both;
+          @keyframes diamond-in-center {
+            from {
+              clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+            }
+            to {
+              clip-path: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%);
+            }
+          }
           h1 {
             font-size: 30px;
             color: white;
@@ -355,7 +412,7 @@ body {
             font-weight: 500;
             font-size: 15px;
             width: 80px;
-            border-radius: 15px;
+            border-radius: 10px;
             border: none;
             cursor: pointer;
             background-color: black;
@@ -366,13 +423,23 @@ body {
     }
   }
   #AboutMe {
+    background-color: black;
     display: none;
     justify-content: space-evenly;
     align-items: center;
     height: 800px;
+    animation: 3s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both;
+    @keyframes wipe-in-right {
+      from {
+        clip-path: inset(0 100% 0 0);
+      }
+      to {
+        clip-path: inset(0 0 0 0);
+      }
+    }
     div {
       h1 {
-        color: rgb(54, 54, 54);
+        color: white;
         writing-mode: vertical-lr;
         transform: rotate(-180deg);
         font-family: "Montserrat", sans-serif;
@@ -383,7 +450,7 @@ body {
     }
     div {
       h2 {
-        color: rgb(54, 54, 54);
+        color: white;
         border-left: 3px solid red;
         font-family: "Montserrat", sans-serif;
         font-size: 27px;
@@ -392,7 +459,7 @@ body {
         width: 700px;
       }
       h3 {
-        color: rgb(54, 54, 54);
+        color: white;
         padding: 20px;
         font-family: "Montserrat", sans-serif;
         text-align: left;
@@ -404,11 +471,9 @@ body {
     img {
       width: 400px;
       height: 500px;
-      filter: blur(1px);
       transition: transform 1s ease;
       &:hover {
         transform: scale(1.1);
-        filter: blur(0px);
       }
     }
   }
@@ -457,7 +522,7 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        transition: 1.5s;
+        transition: 1s;
         &:hover {
           transform: translateY(-50px) scale(1.2);
         }

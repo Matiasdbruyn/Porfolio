@@ -12,13 +12,6 @@
   }
 }
 @media screen and (max-width: 1360px) {
-  #footer #contacto img {
-    width: 60px;
-    height: 70px;
-  }
-  #footer #contacto #h1contacto h1 a {
-    font-size: 25px;
-  }
   #menu #AboutMe div h1 {
     writing-mode: horizontal-tb;
     transform: rotate(-360deg);
@@ -51,12 +44,6 @@
     justify-content: space-evenly;
     align-items: center;
   }
-  #menu #Principio {
-    height: 700px;
-  }
-  #menu #Principio h1 {
-    font-size: 40px;
-  }
   #menu #Principio .izquierda {
     font-size: 60px;
     animation: desplegarI 2s ease-in-out;
@@ -80,9 +67,6 @@
         margin-left: 100px;
       }
     }
-  }
-  #menu #Principio h3 {
-    font-size: 40px;
   }
 }
 @media screen and (max-width: 1146px) {
@@ -108,15 +92,6 @@
   }
 }
 @media screen and (max-width: 962px) {
-  #footer #contacto img {
-    margin-top: 15px;
-    width: 40px;
-    height: 50px;
-  }
-  #footer #contacto #h1contacto h1 a {
-    filter: opacity(100%);
-    font-size: 18px;
-  }
   .main #mainhe #menu #salirmenu img {
     width: 15px;
     height: 15px;
@@ -143,12 +118,6 @@
   .main #menu #Experience .divtraba #trabajo3 a span {
     font-size: 20px;
   }
-  #menu #Principio {
-    height: 700px;
-  }
-  #menu #Principio h1 {
-    font-size: 40px;
-  }
   #menu #Principio .izquierda {
     margin-right: 150px;
     font-size: 50px;
@@ -156,9 +125,6 @@
   #menu #Principio .derecha {
     margin-left: 150px;
     font-size: 50px;
-  }
-  #menu #Principio h3 {
-    font-size: 40px;
   }
 }
 @media screen and (max-width: 634px) {
@@ -197,21 +163,12 @@
     font-size: 18px;
     width: 400px;
   }
-  #menu #Principio {
-    height: 700px;
-  }
-  #menu #Principio h1 {
-    font-size: 40px;
-  }
   #menu #Principio .izquierda {
     margin-right: 100px;
     font-size: 40px;
   }
   #menu #Principio .derecha {
     margin-left: 100px;
-    font-size: 40px;
-  }
-  #menu #Principio h3 {
     font-size: 40px;
   }
   #footer .derechos p {
@@ -227,28 +184,7 @@
     left: 25px;
   }
 }
-@media screen and (max-width: 758px) {
-  #footer .contacto h1 a {
-    font-size: 22px;
-    margin-bottom: 50px;
-  }
-  #footer .contacto h1 {
-    margin-bottom: 10px;
-  }
-  #footer .contacto img {
-    width: 40px;
-    height: 30px;
-  }
-}
 @media screen and (max-width: 746px) {
-  #footer #contacto img {
-    margin-top: 20px;
-    width: 30px;
-    height: 40px;
-  }
-  #footer #contacto #h1contacto h1 a {
-    font-size: 15px;
-  }
   .main #mainhe #menu ul li a {
     font-size: 35px;
     -webkit-text-stroke-width: 0.5px;
@@ -314,23 +250,9 @@
     font-size: 12px;
   }
 }
-@media screen and (max-width: 551px) {
-  #footer #contacto img {
-    margin-top: 20px;
-    width: 20px;
-    height: 30px;
-  }
-  #footer #contacto #h1contacto h1 a {
-    font-size: 10px;
-  }
-}
 @media screen and (max-width: 506px) {
   .main #mainhe #boton-menu {
     font-size: 18px;
-  }
-  .main #mainhe #boton-menu img {
-    width: 25px;
-    height: 25px;
   }
   #footer .derechos p {
     font-size: 10px;
@@ -369,14 +291,6 @@
   }
 }
 @media screen and (max-width: 443px) {
-  #footer #contacto img {
-    margin-top: 15px;
-    width: 15px;
-    height: 20px;
-  }
-  #footer #contacto #h1contacto h1 a {
-    font-size: 8px;
-  }
   .main #menu #AboutMe div h1 {
     font-size: 25px;
   }

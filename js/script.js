@@ -109,11 +109,14 @@ arquiaires.addEventListener("mouseout", function () {
   document.getElementById("arquicont").style.display = "none";
 });
 
-var contacto = document.getElementById("contacto");
-contacto.addEventListener("mouseover", function () {
-  document.getElementById("h1contacto").style.display = "flex";
+var redes = document.getElementById("redes");
+redes.addEventListener("mouseover", function () {
+  document.getElementById("presentacion").style.display = "none";
+  document.getElementById("datos").style.display = "flex";
 });
 
-contacto.addEventListener("mouseout", function () {
-  document.getElementById("h1contacto").style.display = "none";
+var redes = document.getElementById("redes");
+redes.addEventListener("mouseout", function () {
+  document.getElementById("presentacion").style.display = "flex";
+  document.getElementById("datos").style.display = "none";
 });
