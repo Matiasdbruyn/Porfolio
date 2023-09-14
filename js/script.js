@@ -120,3 +120,15 @@ redes.addEventListener("mouseout", function () {
   document.getElementById("presentacion").style.display = "flex";
   document.getElementById("datos").style.display = "none";
 });
+
+var telefono = document.getElementById("telefono");
+telefono.addEventListener("mouseover", function () {
+  document.getElementById("telefono").style.display = "none";
+  document.getElementById("numero").style.display = "flex";
+});
+
+var telefono = document.getElementById("telefono");
+telefono.addEventListener("mouseout", function () {
+  document.getElementById("telefono").style.display = "flex";
+  document.getElementById("numero").style.display = "none";
+});

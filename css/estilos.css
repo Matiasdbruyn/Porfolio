@@ -37,7 +37,7 @@ html {
       color: red; }
   #mainhe #menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding: 50px;
     background-color: rgba(214, 213, 213, 0.911);
     position: fixed;
@@ -49,7 +49,7 @@ html {
     #mainhe #menu ul {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly; }
+      justify-content: center; }
       #mainhe #menu ul li {
         display: grid;
         margin-top: 100px; }
@@ -57,44 +57,14 @@ html {
           padding-right: 50px;
           font-family: "Poppins", sans-serif;
           text-decoration: none;
-          color: rgba(54, 54, 54, 0.459);
+          color: transparent;
           -webkit-text-stroke-width: 1px;
           -webkit-text-stroke-color: #363636;
-          font-size: 45px;
+          font-size: 70px;
           font-weight: 800;
           transition-duration: 1s; }
           #mainhe #menu ul li a:hover {
             color: #363636; }
-      #mainhe #menu ul div {
-        margin-top: 80px;
-        display: flex;
-        justify-content: space-evenly; }
-        #mainhe #menu ul div a #git {
-          padding: 10px;
-          width: 100px;
-          height: 100px;
-          transition: 0.25s; }
-          #mainhe #menu ul div a #git:hover {
-            transform: scale(1.1);
-            animation: contact 0.4s linear; }
-        #mainhe #menu ul div a #linkedin {
-          padding: 10px;
-          width: 100px;
-          height: 100px;
-          transition: 0.25s; }
-          #mainhe #menu ul div a #linkedin:hover {
-            transform: scale(1.1);
-            animation: contact 0.4s linear; }
-
-@keyframes contact {
-  40% {
-    transform: scale(1.4); }
-  60% {
-    transform: scale(0.8); }
-  80% {
-    transform: scale(1.2); }
-  100% {
-    transform: scale(1); } }
     #mainhe #menu #salirmenu {
       transition: 1s ease-in-out; }
       #mainhe #menu #salirmenu img {
@@ -502,9 +472,22 @@ html {
     clip-path: circle(0%); }
   to {
     clip-path: circle(125%); } }
-    #footer #contacto #datos img {
-      width: 50px;
-      height: 50px; }
+    #footer #contacto #datos div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      #footer #contacto #datos div a img {
+        width: 50px;
+        height: 50px; }
+      #footer #contacto #datos div #telefono {
+        width: 50px;
+        height: 50px; }
+      #footer #contacto #datos div #numero {
+        display: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 25px;
+        text-decoration: none; }
 
 .derechos p {
   font-family: "Montserrat", sans-serif;
@@ -593,7 +576,12 @@ html {
     font-size: 25px; }
   .main #menu #Experience .divtraba #trabajo2 #trabajo2p {
     width: 500px;
-    font-size: 25px; } }
+    font-size: 25px; }
+  #footer #contacto #redes {
+    width: 90%; }
+  #footer #contacto #redes #datos div img {
+    width: 40px;
+    height: 40px; } }
 
 @media screen and (max-width: 858px) {
   .main #menu #Experience .divtraba #trabajo2 a {
