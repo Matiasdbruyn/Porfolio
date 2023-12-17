@@ -63,6 +63,9 @@ function Traba2() {
 function Traba3() {
   document.getElementById(`trabajo3p`).style.display = `flex`;
 }
+function Traba4() {
+  document.getElementById(`trabajo4p`).style.display = `flex`;
+}
 
 var botonMenu = document.getElementById("boton-menu");
 var menu = document.getElementById("menu");
